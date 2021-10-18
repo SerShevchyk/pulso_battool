@@ -7,9 +7,9 @@ mental_resilience_teaser_block:
 mental_resilience_block:
   block_settings:
     stress:
-      title: "STAP 1 van 5 - Stress"
+      title: "STAP 1 van 5 - Stressklachten"
       separator: "Psychische spanningsklachten"
-      introduction: "Met behulp van de volgende vragenlijst - de BAT, ontwikkeld door onderzoekers van de KU Leuven - kan u uw niveau van stress en uw risico op burn-out inschatten. Deze vragenlijst heeft betrekking op hoe u uw werk beleeft en hoe u zich daarbij voelt. Na het invullen van de vragenlijst ontvangt u onmiddellijk gepersonaliseerde feedback: de graad van de klachten van stress of burn-out die u heeft aangeduid in de vragenlijst, en een gerichte doorverwijzing naar de informatie op deze website die voor u het meest relevant is. Belangrijk om te weten: Deze vragenlijst laat in geen geval toe een medische diagnose te stellen, zonder het bijkomende onderzoek door een expert: arts of psycholoog. Ze meet enkel de klachten van stress en burn-out die personen kunnen ervaren. Op basis van uw antwoorden wordt een score berekend, die vervolgens wordt vergeleken met scores van groepen van personen die al dan niet door experts de diagnose burn-out hadden gekregen (dit zijn \"grenswaarden\" die zijn bepaald in wetenschappelijk onderzoek). Om uw persoonlijke feedback te kunnen berekenen, is het noodzakelijk dat u op alle vragen rond stress of burn-out antwoordt."
+      introduction: "Met behulp van de volgende vragenlijst - de BAT, ontwikkeld door onderzoekers van de KU Leuven - kan u uw niveau van stress en uw risico op burn-out inschatten.<br>Deze vragenlijst heeft betrekking op hoe u uw werk beleeft en hoe u zich daarbij voelt.<br>Na het invullen van de vragenlijst ontvangt u onmiddellijk gepersonaliseerde feedback: de graad van de klachten van stress of burn-out die u heeft aangeduid in de vragenlijst, en een gerichte doorverwijzing naar de informatie op deze website die voor u het meest relevant is.<br><br>Belangrijk om te weten:<br>Deze vragenlijst laat in geen geval toe een medische diagnose te stellen, zonder het bijkomende onderzoek door een expert: arts of psycholoog. Ze meet enkel de klachten van stress en burn-out die personen kunnen ervaren. Op basis van uw antwoorden wordt een score berekend, die vervolgens wordt vergeleken met scores van groepen van personen die al dan niet door experts de diagnose burn-out hadden gekregen (dit zijn \"grenswaarden\" die zijn bepaald in wetenschappelijk onderzoek).<br>Om uw persoonlijke feedback te kunnen berekenen, is het noodzakelijk dat u op alle vragen rond stress of burn-out antwoordt."
       instruction: "Deze volgende 10 uitspraken verwijzen naar verschillende soorten stressklachten. Bij elke uitspraak kan u aanduiden hoe vaak op u van toepassing (nooit, zelden, soms, vaak of altijd). Vervolgens krijgt u een eerste feedback."
       result:
         title: "STAP 2 van 5 - Uw resultaat"
@@ -48,9 +48,9 @@ mental_resilience_block:
       introduction: "Dankuwel om deel te nemen aan dit onderzoek."
       instruction: ""
     risk:
-      green: "Low Risk"
-      orange: "Medium Risk"
-      red: "High Risk"
+      green: "Groen"
+      orange: "Oranje"
+      red: "Rood"
   fields:
     stress:
       1: "Ik heb problemen met inslapen of doorslapen"

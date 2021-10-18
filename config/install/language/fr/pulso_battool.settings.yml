@@ -1,0 +1,106 @@
+langcode: fr
+mental_resilience_teaser_block:
+  title: "Quelle est votre résilience mentale au travail ?"
+  description: "Répondez à quelques questions et recevez des conseils."
+  button_title: "Faites le test"
+  redirect_url: "/"
+mental_resilience_block:
+  block_settings:
+    stress:
+      title: "ÉTAPPE 1 de 5 - Plaintes de stress"
+      separator: "Psychische spanningsklachten"
+      introduction: "Au moyen du questionnaire suivant - le BAT, développé par des chercheurs de la KU Leuven - vous pouvez estimer votre niveau de stress et votre risque de burn-out. Les questions réfèrent à votre vécu de votre situation de travail et à la façon dont vous vous sentez.<br>Après avoir rempli le questionnaire, vous recevrez immédiatement un retour personnalisé : le degré de troubles de stress ou d'épuisement professionnel que vous avez indiqué dans le questionnaire, et une orientation ciblée vers les informations de ce site qui sont les plus pertinentes pour vous.<br><br>Important à savoir :<br>Ce questionnaire ne permet en aucun cas de poser un diagnostic médical sans l'examen complémentaire d'un expert : médecin ou psychologue. Il mesure uniquement les plaintes de stress et d'épuisement professionnel (burn-out) que les personnes peuvent ressentir. Sur la base de vos réponses, un score est calculé, qui est ensuite comparé à des scores de groupes de personnes qui ont - oui ou non - été diagnostiquées avec un burn-out par des experts (il s'agit de « valeurs seuils » déterminées dans la recherche scientifique).<br>Pour pouvoir calculer votre retour personnel, il est nécessaire que vous répondiez à toutes les questions relatives au stress ou au burn-out."
+      instruction: "Les 10 énoncés suivants réfèrent aux différents types de plaintes de stress.<br>Vous pouvez indiquer la fréquence à laquelle chaque déclaration s’applique à vous (jamais, rarement, parfois, souvent ou toujours).<br>Vous recevrez ensuite un premier retour."
+      result:
+        title: "ÉTAPPE 2 de 5 - Votre résultat"
+        green:
+          value: "Vous êtes dans la zone de sécurité. Continuez à vous appuyer sur votre résilience mentale et vos ressources au travail et au-delà pour <a href=\"https://google.com/search?q=prevenir\">prévenir</a> le stress.<br><br>La résilience mentale est une ressource personnelle forte. Elle peut aider à maintenir un équilibre entre les exigences professionnelles et les ressources au travail, pendant les périodes où les exigences du travail sont plus importantes. De cette façon, elle vous aide à faire face au stress au travail.<br><br>Vous pouvez également garder une longueur d'avance sur le stress en restant vigilant(e) quant <a href=\"https://google.com/search?q=reconnaitre\">aux signes et aux causes possibles du stress au travail</a>. Un déséquilibre entre les exigences du travail et les ressources au travail peut en effet engendrer du stress.<br>Reconnaissez-vous déjà des signes de stress en vous ou ressentez-vous qu'il existe depuis longtemps un déséquilibre entre les exigences du travail et les ressources au travail ? <a href=\"https://google.com/search?q=prevention\">Discutez-en</a> avec les personnes de votre environnement de travail qui sont des experts en la matière et qui peuvent vous aider à prévenir les plaintes de stress plus graves."
+          format: "full_html"
+        orange:
+          value: "Vous souffrez clairement de plaintes de stress, sans que celles-ci deviennent problématiques.Restez vigilant(e) à vos <a href=\"https:/google.com/search?q=reconnaitre\">signes de stress</a>. Vous pouvez déjà estimer plus précisément votre risque de burn-out, à l'aide du questionnaire suivant.<br><br>Considérez également les <a href=\"https://google.com/search?q=reconnaitre\">causes possibles</a> de vos plaintes de stress dans votre situation de travail. Un déséquilibre entre les exigences professionnelles et les ressources au travail (exigences professionnelles élevées et ressources insuffisantes) peut en effet engendrer du stress, et lorsqu'il dure plus longtemps, un burn-out.<br><br>N'hésitez pas à <a href=\"https://google.com/search?q=prevention\">profiter du soutien et de l'aide dans votre environnement</a> : au travail, et à l'extérieur. Cela peut vous aider à soulager le stress et à prévenir le burn-out."
+          format: "full_html"
+        red:
+          value: "Vous avez des plaintes de stress prononcées et vous appartenez probablement au groupe à risque de burn-out.<br>Remplissez la partie suivante du questionnaire pour estimer plus précisément votre risque de burn-out.<br><br>Aussi, n'hésitez pas à <a href=\"https://google.com/search?q=prevenir\">faire appel au soutien et à l'aide dans votre environnement</a> : au travail et à l'extérieur. Cela peut vous aider à soulager le stress et à prévenir le burn-out."
+          format: "full_html"
+    burnout:
+      title: "ÉTAPPE 3 de 5 - Plaintes de burn-out typiques"
+      separator: "Uitputting"
+      introduction: ""
+      instruction: "Les 23 énoncés suivants réfèrent aux plaintes typiques de burn-out.<br>Vous pouvez indiquer la fréquence à laquelle chaque déclaration s’applique à vous (jamais, rarement, parfois, souvent ou toujours).<br>Vous recevrez ensuite un retour immédiat."
+      result:
+        title: "ÉTAPPE 4 de 5 - Votre résultat"
+        green:
+          value: "Vous êtes dans la zone de sécurité. Continuez à vous appuyer sur votre résilience mentale et vos ressources au travail et au-delà pour <a href=\"https://google.com/search?q=prevenir\">prévenir</a> le stress et le burn-out.<br><br>La résilience mentale est une ressource personnelle forte. Elle peut aider à maintenir un équilibre entre les exigences professionnelles et les ressources au travail, pendant les périodes où les exigences du travail sont plus importantes. De cette façon, elle vous aide à faire face au stress au travail.<br><br>Vous pouvez également garder une longueur d'avance sur l'épuisement professionnel en restant vigilant(e) quant <a href=\"https://google.com/search?q=reconnaitre\">aux signes et aux causes possibles du stress et du burn-out au travail</a>. Après tout, un déséquilibre entre les exigences professionnelles et les ressources au travail (exigences professionnelles élevées et ressources insuffisantes) peut engendrer du stress, et lorsqu'il dure plus longtemps, il peut conduire au burn-out.<br><br>Avez-vous déjà ressenti des plaintes de stress ou avez-vous l'impression qu'il existe depuis longtemps un déséquilibre entre les exigences professionnelles et les ressources au travail ? N'attendez plus pour <a href=\"https://google.com/search?q=prevention\">en discuter</a> avec les personnes de votre environnement de travail qui sont expertes en la matière et qui peuvent vous aider à prévenir les plaintes de stress plus graves ou le burn-out."
+          format: "full_html"
+        orange:
+          value: "Vous présentez des symptômes accrus, ce qui signifie qu'il y a un risque de burn-out. À ce stade, cependant, vous n'avez pas de score problématique. Restez vigilant(e) pour vos <a href=\"https://google.com/search?q=reconnaitre\">signaux</a>.<br><br>Tenez également compte des <a href=\"https://google.com/search?q=reconnaitre\">causes possibles</a> de vos plaintes dans votre situation de travail.<br>Reconnaissez-vous un déséquilibre entre les exigences professionnelles et les ressources au travail (en particulier : exigences professionnelles élevées et ressources insuffisantes) ? Vous vivez ce déséquilibre depuis un certain temps ?<br>N'attendez plus pour <a href=\"https://google.com/search?q=prevention\">en discuter</a> avec les personnes de votre environnement de travail qui sont expertes en la matière.<br>N'hésitez pas à <a href=\"https://google.com/search?q=prevention\">faire appel au soutien et à l'aide dans votre environnement</a> : au travail ou à l'extérieur. Cela peut vous aider à prévenir le burn-out."
+          format: "full_html"
+        red:
+          value: "Vous avez un score élevé sur les plaintes de burn-out - il est possible que vous vivez actuellement un burn-out. N'attendez plus pour <a href=\"https://google.com/search?q=prevention\">profiter de l'accompagnement et des soins professionnels dans votre environnement</a> : au travail ou à l'extérieur. Cela peut vous guider et vous aider à récupérer."
+          format: "full_html"
+    worksituation:
+      title: "ÉTAPPE 5 de 5 - Votre vécu du travail"
+      title2: "Quelques caractéristiques personnelles"
+      introduction: ""
+      instruction: "Vous trouverez ci-dessous 8 questions ur votre situation professionnelle et la façon dont vous la vivez.<br>Vous pouvez indiquer la mesure dans laquelle vous êtes d'accord ou pas d'accord avec chaque déclaration. Il n'y pas, pour ces questions, de bonnes ou mauvaises réponses. Ce qui importe est ce que vous vivez."
+    thanks:
+      title: "Merci"
+      introduction: "Merci pour participer."
+      instruction: ""
+    risk:
+      green: "Vert"
+      orange: "Orange"
+      red: "Rouge"
+  fields:
+    stress:
+      1: "J'éprouve des problèmes pour m'endormir ou pour faire des nuits complètes"
+      2: "J'ai tendance à me tracasser"
+      3: "Je me sens énervé/e et tendu/e"
+      4: "Je me sens angoissé/e et/ou j'ai des crises de panique"
+      5: "J'ai du mal avec l'agitation et/ou le bruit"
+      6: "Je souffre de palpitations cardiaques ou de douleurs dans la poitrine"
+      7: "Je souffre de problèmes d'estomac et/ou intestinaux"
+      8: "Je souffre de maux de tête"
+      9: "J'éprouve des douleurs musculaires, par exemple dans la nuque, les épaules ou le dos"
+      10: "Je tombe rapidement malade"
+    burnout:
+      1: "Au travail, je me sens mentalement épuisé/e"
+      2: "Tout ce que je fais au travail me demande de l'effort"
+      3: "Je n'arrive pas à trouver le repos après le travail"
+      4: "Au travail, je me sens physiquement épuisé/e"
+      5: "Quand je me lève le matin, je manque d'énergie pour commencer la journée"
+      6: "Je veux être actif/ve au travail, mais je n'y arrive pas"
+      7: "Lorsque je fais des efforts au travail, je me sens rapidement fatigué/e"
+      8: "A la fin de la journée de travail, je me sens mentalement épuisé/e et vide"
+      9: "Je n'arrive pas à faire preuve d'intérêt et d'enthousiasme pour mon travail"
+      10: "Au travail, je ne réfléchis pas beaucoup et je fonctionne au pilote automatique"
+      11: "Je ressens une forte aversion pour mon travail"
+      12: "Mon travail me laisse indifférent/e"
+      13: "Je suis cynique à propos de ce que mon travail représente pour d'autres"
+      14: "Au travail, j'ai du mal à rester concentré/e"
+      15: "Il m'est difficile de réfléchir clairement au travail"
+      16: "J'oublie des choses et je suis distrait/e au travail"
+      17: "Lorsque je suis au travail, je parviens difficilement à me concentrer"
+      18: "Je commets des erreurs au travail parce que j'ai la tête ailleurs"
+      19: "Au travail, j'ai la sensation de ne pas maîtriser mes émotions"
+      20: "Je ne me reconnais pas dans la manière dont je réagis émotionnellement au travail"
+      21: "Au travail, je m'irrite rapidement lorsque les choses ne se passent pas comme je le veux"
+      22: "Je me fâche ou deviens triste au travail sans vraiment savoir pourquoi"
+      23: "Il m'arrive de réagir de façon trop émotionnelle au travail sans le vouloir"
+    worksituation:
+      1: "Mon travail correspond à mes capacités."
+      2: "J’estime devoir trop travailler."
+      3: "Mon travail se combine aisément avec ma vie privée."
+      4: "Je peux compter sur mon manager lorsque je rencontre des difficultés dans mon travail."
+      5: "Je peux prendre de nombreuses décisions moi-même dans mon travail. "
+      6: "Je suis inquiète de perdre mon travail."
+      7: "Je peux m'adresser à mes collègues lorsque quelque chose de désagréable m'arrive."
+      8: "Je rencontre des situations professionnelles qui me sont difficiles émotionnellement. "
+      9: "On tient compte de mon avis lorsqu’il s’agit de prendre des décisions."
+      10: "Au travail, je sais exactement ce que les autres attendent de moi."
+dependencies:
+  module:
+    - pulso_battool
+  enforced:
+    module:
+      - pulso_battool

@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pulso_battool\n"
 "POT-Creation-Date: 2021-10-18 20:50+0200\n"
-"PO-Revision-Date: 2021-10-18 20:51+0200\n"
+"PO-Revision-Date: 2021-10-18 20:52+0200\n"
 "Last-Translator: Vincent Verbruggen <vincent.verbruggen@viavario.be>\n"
 "Language-Team: vincent.verbruggen@viavario.be\n"
-"Language: nl\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +24,7 @@ msgstr "ID"
 #: src/Entity/BatToolResult.php:86
 #, fuzzy
 msgid "The ID of the Term entity."
-msgstr "De ID van de Term entiteit."
+msgstr "L'ID de l'entité Term."
 
 #: src/Entity/BatToolResult.php:91
 #, fuzzy
@@ -34,118 +34,120 @@ msgstr "UUID"
 #: src/Entity/BatToolResult.php:92
 #, fuzzy
 msgid "The UUID of the Contact entity."
-msgstr "De UUID van de Contact entiteit."
+msgstr "L'UUID de l'entité Contact."
 
 #: src/Entity/BatToolResult.php:96
 #: src/Entity/Controller/BatToolResultListBuilder.php:105
 #, fuzzy
 msgid "Created"
-msgstr "Aangemaakt"
+msgstr "Créé"
 
 #: src/Entity/BatToolResult.php:97
 #, fuzzy
 msgid "The time that the entity was created."
-msgstr "Het tijdstip waarop de entiteit werd gecreëerd."
+msgstr "Le moment où l'entité a été créée."
 
 #: src/Entity/BatToolResult.php:103
 #, fuzzy
 msgid "Language code"
-msgstr "Taalcode"
+msgstr "Code de la langue"
 
 #: src/Entity/BatToolResult.php:104
 #, fuzzy
 msgid "The language code."
-msgstr "De taalcode."
+msgstr "Le code de la langue."
 
 #: src/Entity/BatToolResult.php:109
 #, fuzzy
 msgid "Default Language code"
-msgstr "Standaardtaalcode"
+msgstr "Code de langue par défaut"
 
 #: src/Entity/BatToolResult.php:110
 #, fuzzy
 msgid "Indicates if this is the default language."
-msgstr "Geeft aan of dit de standaardtaal is."
+msgstr "Indique s'il s'agit de la langue par défaut."
 
 #: src/Entity/BatToolResult.php:120 src/Form/MentalResilienceForm.php:495
 #, fuzzy
 msgid "What is your age?"
-msgstr "Wat is uw leeftijd?"
+msgstr "Quel est votre age?"
 
 #: src/Entity/BatToolResult.php:139 src/Form/MentalResilienceForm.php:501
 #, fuzzy
 msgid "What is your gender?"
-msgstr "Met welk geslacht identificeer je je het meest?"
+msgstr "Quelle est votre genre ?"
 
 #: src/Entity/BatToolResult.php:163 src/Form/MentalResilienceForm.php:512
 #, fuzzy
 msgid "What is the highest diploma you have obtained?"
-msgstr "Wat is het hoogste diploma dat u heeft behaald?"
+msgstr "Quel est le plus haut diplôme que vous avez obtenu ?"
 
 #: src/Entity/BatToolResult.php:189 src/Form/MentalResilienceForm.php:525
 #, fuzzy
 msgid "What sector do you work in?"
-msgstr "In welke sector werkt u?"
+msgstr "Dans quel secteur travaillez-vous ?"
 
 #: src/Entity/BatToolResult.php:218 src/Form/MentalResilienceForm.php:540
 #, fuzzy
 msgid "What is your occupation?"
-msgstr "Wat is uw beroep?"
+msgstr "Quelle est votre occupation ?"
 
 #: src/Entity/BatToolResult.php:246 src/Form/MentalResilienceForm.php:555
 #, fuzzy
 msgid "Do you work full-time or part-time?"
-msgstr "Werkt u voltijds of deeltijds?"
+msgstr "Travaillez-vous à temps plein ou à temps partiel ?"
 
 #: src/Entity/BatToolResult.php:269 src/Form/MentalResilienceForm.php:565
 #, fuzzy
 msgid "What type of contract do you have?"
-msgstr "Wat voor contract heb je?"
+msgstr "Quel type de contrat avez-vous ?"
 
 #: src/Form/BatToolResultDeleteForm.php:25
 #, fuzzy
 msgid "Are you sure you want to delete entity %name?"
-msgstr "Weet u zeker dat u entiteit %name wilt verwijderen?"
+msgstr "Etes-vous sûr de vouloir supprimer l'entité %nnom ?"
 
 #: src/Form/BatToolResultDeleteForm.php:41
 #, fuzzy
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr "Supprimer"
 
 #: src/Form/BatToolResultExportForm.php:45
 #, fuzzy
 msgid "Export"
-msgstr "Exportieren"
+msgstr "Exporter"
 
 #: src/Form/MentalResilienceForm.php:76
 #, fuzzy
 msgid "Please choose an answer"
-msgstr "Kies een antwoord"
+msgstr "Veuillez choisir une réponse"
 
 #: src/Form/MentalResilienceForm.php:143 src/Form/MentalResilienceForm.php:317
 #, fuzzy
 msgid "Next: Your result"
-msgstr "Volgende: Uw resultaat"
+msgstr "Suivant : Votre résultat"
 
 #: src/Form/MentalResilienceForm.php:233
 #, fuzzy
 msgid "Next: Burn-out"
-msgstr "Volgende: Burn-out"
+msgstr "Suivant : Burn-out"
 
 #: src/Form/MentalResilienceForm.php:408
 #, fuzzy
 msgid "Next: Your work situation and personal characteristics"
-msgstr "Volgende: Uw werksituatie en persoonlijke kenmerken"
+msgstr ""
+"Suivant : Votre situation professionnelle et vos caractéristiques "
+"personnelles"
 
 #: src/Form/MentalResilienceForm.php:504
 #, fuzzy
 msgid "Male"
-msgstr "Man"
+msgstr "Homme"
 
 #: src/Form/MentalResilienceForm.php:505
 #, fuzzy
 msgid "Female"
-msgstr "Vrouw"
+msgstr "Femme"
 
 #: src/Form/MentalResilienceForm.php:506
 #, fuzzy
@@ -155,75 +157,77 @@ msgstr "X"
 #: src/Form/MentalResilienceForm.php:515
 #, fuzzy
 msgid "Primary education"
-msgstr "Basisonderwijs"
+msgstr "Ecole primaire"
 
 #: src/Form/MentalResilienceForm.php:516
 #, fuzzy
 msgid "Lower secondary education (up to 3rd year)"
-msgstr "Lager middelbaar onderwijs (tot en met het 3e jaar)"
+msgstr "Enseignement secondaire inférieur (jusqu'à la 3e année)"
 
 #: src/Form/MentalResilienceForm.php:517
 #, fuzzy
 msgid "Upper secondary education (up to and including 7th year)"
-msgstr "Hoger middelbaar onderwijs (tot en met het 7e jaar)"
+msgstr "Enseignement secondaire supérieur (jusqu'à la 7e année incluse)"
 
 #: src/Form/MentalResilienceForm.php:518
 #, fuzzy
 msgid "Non-university higher education"
-msgstr "Niet-universitair hoger onderwijs"
+msgstr "Enseignement supérieur non-universitaire"
 
 #: src/Form/MentalResilienceForm.php:519
 #, fuzzy
 msgid "University higher education"
-msgstr "Universitair hoger onderwijs"
+msgstr "Enseignement supérieur universitaire"
 
 #: src/Form/MentalResilienceForm.php:528
 #, fuzzy
 msgid "Agriculture"
-msgstr "Landbouw"
+msgstr "Agriculture"
 
 #: src/Form/MentalResilienceForm.php:529
 #, fuzzy
 msgid "Manufacturing"
-msgstr "Fabricering"
+msgstr "Production"
 
 #: src/Form/MentalResilienceForm.php:530
 #, fuzzy
 msgid "Services"
-msgstr "Diensten"
+msgstr "Services"
 
 #: src/Form/MentalResilienceForm.php:531
 #, fuzzy
 msgid "Health Care"
-msgstr "Gezondheidszorg"
+msgstr "Soins de santé"
 
 #: src/Form/MentalResilienceForm.php:532
 #, fuzzy
 msgid "Public administration"
-msgstr "Openbaar bestuur"
+msgstr "Administration Publique"
 
 #: src/Form/MentalResilienceForm.php:533
 #, fuzzy
 msgid "Education"
-msgstr "Opleiding"
+msgstr "Éducation"
 
 #: src/Form/MentalResilienceForm.php:534 src/Form/MentalResilienceForm.php:549
 #, fuzzy
 msgid "Self-employed or liberal profession"
-msgstr "Zelfstandige of vrij beroep"
+msgstr "Travailleur indépendant ou profession libérale"
 
 #: src/Form/MentalResilienceForm.php:543
 #, fuzzy
 msgid ""
 "Unskilled worker (e.g. machine operator/operator, production worker, ...)"
 msgstr ""
-"Ongeschoolde arbeider (bv. machinebediener/operator, productiearbeider, ...)"
+"Ouvrier non qualifié (par exemple, conducteur de machine/opérateur, ouvrier "
+"de production, ...)"
 
 #: src/Form/MentalResilienceForm.php:544
 #, fuzzy
 msgid "Skilled worker or foreman (e.g. electrician, mechanic, welder, etc.)"
 msgstr ""
-"Geschoold arbeider of voorman (bv. elektricien, mecanicien, lasser, enz.)"
+"Ouvrier qualifié ou contremaître (par exemple, électricien, mécanicien, "
+"soudeur, etc.)"
 
 #: src/Form/MentalResilienceForm.php:545
 #, fuzzy
@@ -231,8 +235,8 @@ msgid ""
 "Executive or administrative employee (e.g. typist, secretary, telephonist, "
 "shop assistant,...)"
 msgstr ""
-"Uitvoerend of administratief medewerker (bijv. typiste, secretaresse, "
-"telefoniste, winkelbediende,...)"
+"Employé de direction ou administratif (par exemple dactylo, secrétaire, "
+"téléphoniste, vendeur,...)"
 
 #: src/Form/MentalResilienceForm.php:546
 #, fuzzy
@@ -240,8 +244,8 @@ msgid ""
 "Medium-level employee or manager of employees (e.g. ICT expert, teacher, "
 "sales representative,...)"
 msgstr ""
-"Werknemer van middelbaar niveau of manager van werknemers (bv. ICT-"
-"deskundige, leraar, handelsvertegenwoordiger,...)"
+"Employé de niveau moyen ou responsable d'employés (par exemple, expert en "
+"TIC, enseignant, représentant commercial,...)"
 
 #: src/Form/MentalResilienceForm.php:547
 #, fuzzy
@@ -249,8 +253,9 @@ msgid ""
 "Senior, lower or middle management (e.g. business manager, sales manager, "
 "office manager, engineer, teacher, etc.)"
 msgstr ""
-"Hoger, lager of middenkader (bv. bedrijfsmanager, verkoopmanager, "
-"kantoormanager, ingenieur, leraar, enz.)"
+"Cadre supérieur, inférieur ou intermédiaire (par exemple, directeur "
+"commercial, directeur des ventes, chef de bureau, ingénieur, enseignant, "
+"etc.)"
 
 #: src/Form/MentalResilienceForm.php:548
 #, fuzzy
@@ -258,167 +263,168 @@ msgid ""
 "Senior manager or director (e.g. head of department, senior manager, head of "
 "school, ...)"
 msgstr ""
-"Senior manager of directeur (bijv. afdelingshoofd, senior manager, hoofd van "
-"een school, ...)"
+"Cadre supérieur ou directeur (par exemple, chef de service, cadre supérieur, "
+"chef d'établissement, ...)"
 
 #: src/Form/MentalResilienceForm.php:558
 #, fuzzy
 msgid "Full-time"
-msgstr "Full-time"
+msgstr "À plein temps"
 
 #: src/Form/MentalResilienceForm.php:559
 #, fuzzy
 msgid "Part-time (e.g. 4/5 or 1/2)"
-msgstr "Deeltijds (bv. 4/5 of 1/2)"
+msgstr "Temps partiel (par exemple 4/5 ou 1/2)"
 
 #: src/Form/MentalResilienceForm.php:568
 #, fuzzy
 msgid "Permanent contract (open-ended; statutory)"
-msgstr "Arbeidsovereenkomst voor onbepaalde tijd (statutair)"
+msgstr "Contrat permanent (à durée indéterminée ; statutaire)"
 
 #: src/Form/MentalResilienceForm.php:569
 #, fuzzy
 msgid "Temporary contract (fixed term, contractual, agency work, etc.)"
-msgstr "Tijdelijk contract (bepaalde duur, contractueel, uitzendarbeid, enz.)"
+msgstr ""
+"Contrat temporaire (durée déterminée, contrat, travail intérimaire, etc.)"
 
 #: src/Form/MentalResilienceForm.php:579
 #, fuzzy
 msgid "Submit"
-msgstr "Klaar"
+msgstr "Envoyer"
 
 #: src/Form/MentalResilienceForm.php:669
 #: templates/mental-resilience-form.html.twig:19
 #, fuzzy
 msgid "Never"
-msgstr "Nooit"
+msgstr "Jamais"
 
 #: src/Form/MentalResilienceForm.php:670
 #: templates/mental-resilience-form.html.twig:20
 #, fuzzy
 msgid "Rarely"
-msgstr "Zelden"
+msgstr "Rarement"
 
 #: src/Form/MentalResilienceForm.php:671
 #: templates/mental-resilience-form.html.twig:21
 #, fuzzy
 msgid "Sometimes"
-msgstr "Soms"
+msgstr "Parfois"
 
 #: src/Form/MentalResilienceForm.php:672
 #: templates/mental-resilience-form.html.twig:22
 #, fuzzy
 msgid "Often"
-msgstr "Vaak"
+msgstr "Souvent"
 
 #: src/Form/MentalResilienceForm.php:673
 #: templates/mental-resilience-form.html.twig:23
 #, fuzzy
 msgid "Always"
-msgstr "Altijd"
+msgstr "Toujours"
 
 #: src/Form/MentalResilienceForm.php:684
 #: templates/mental-resilience-work-situation-form.html.twig:19
 #, fuzzy
 msgid "Strongly disagree"
-msgstr "Zeer oneens"
+msgstr "Totalement en désaccord"
 
 #: src/Form/MentalResilienceForm.php:685
 #: templates/mental-resilience-work-situation-form.html.twig:20
 #, fuzzy
 msgid "Disagree"
-msgstr "Oneens"
+msgstr "Pas tout à fait d’accord"
 
 #: src/Form/MentalResilienceForm.php:686
 #: templates/mental-resilience-work-situation-form.html.twig:21
 #, fuzzy
 msgid "Rather disagree"
-msgstr "Niet mee eens"
+msgstr "Plutôt en désaccord"
 
 #: src/Form/MentalResilienceForm.php:687
 #: templates/mental-resilience-work-situation-form.html.twig:22
 #, fuzzy
 msgid "Neither agree nor disagree"
-msgstr "Neutraal"
+msgstr "Neutre"
 
 #: src/Form/MentalResilienceForm.php:688
 #: templates/mental-resilience-work-situation-form.html.twig:23
 #, fuzzy
 msgid "Rather agree"
-msgstr "Ga liever akkoord"
+msgstr "Plutôt d'accord"
 
 #: src/Form/MentalResilienceForm.php:689
 #: templates/mental-resilience-work-situation-form.html.twig:24
 #, fuzzy
 msgid "Agree"
-msgstr "Mee eens"
+msgstr "J’accepte"
 
 #: src/Form/MentalResilienceForm.php:690
 #: templates/mental-resilience-work-situation-form.html.twig:25
 #, fuzzy
 msgid "Fully agree"
-msgstr "Volledig mee eens"
+msgstr "Entièrement d'accord"
 
 #: src/Form/MentalResilienceForm.php:698
 #, fuzzy
 msgid "The form has been submitted"
-msgstr "Het formulier is ingediend"
+msgstr "Le formulaire a été soumis"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:73
 #, fuzzy
 msgid "Stress Result Descriptions"
-msgstr "Stress Resultaat Beschrijvingen"
+msgstr "Descriptions des résultats de stress"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:79
 #, fuzzy
 msgid "Stress Result: Green"
-msgstr "Stress Resultaat: Groen"
+msgstr "Résultat du stress : Vert"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:86
 #, fuzzy
 msgid "Stress Result: Orange"
-msgstr "Stress Resultaat: Oranje"
+msgstr "Résultat du stress : Orange"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:93
 #, fuzzy
 msgid "Stress Result: Red"
-msgstr "Stress Resultaat: Rood"
+msgstr "Résultat du stress : Rouge"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:99
 #, fuzzy
 msgid "Burn Out Result Descriptions"
-msgstr "Burn Out Resultaat Beschrijvingen"
+msgstr "Descriptions des résultats du burn out"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:105
 #, fuzzy
 msgid "Burn Out Result: Green"
-msgstr "Burn Out Resultaat: Groen"
+msgstr "Résultat du Burn Out : Vert"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:112
 #, fuzzy
 msgid "Burn Out Result: Orange"
-msgstr "Burn Out Resultaat: Oranje"
+msgstr "Résultat du Burn Out : Orange"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:119
 #, fuzzy
 msgid "Burn Out Result: Red"
-msgstr "Burn Out Resultaat: Rood"
+msgstr "Résultat du Burn Out : Rouge"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:61
 #, fuzzy
 msgid "Title"
-msgstr "Titel"
+msgstr "Titre"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:67
 #, fuzzy
 msgid "Description"
-msgstr "Beschrijving"
+msgstr "Description"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:73
 #, fuzzy
 msgid "Button Title"
-msgstr "Knop Titel"
+msgstr "Titre du bouton"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:79
 #, fuzzy
 msgid "Redirect Url"
-msgstr "Url doorverwijzen"
+msgstr "URL de redirection"

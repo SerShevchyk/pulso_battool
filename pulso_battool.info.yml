@@ -3,7 +3,7 @@ description: 'Provide custom functionality for Pulso Battool module'
 core: 8.x
 core_version_requirement: ^8 || ^9
 type: module
-'interface translation project': mymodule
+'interface translation project': pulso_battool
 'interface translation server pattern': modules/custom/pulso_battool/translations/pulso_battool-%language.po
 dependencies:
   - block
