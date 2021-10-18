@@ -1,0 +1,288 @@
+pulso_battool.settings:
+  type: config_object
+  label: 'Pulso Bat Tool settings'
+  mapping:
+    mental_resilience_teaser_block:
+      label: 'Mental Resilience Teaser Block'
+      type: mapping
+      mapping:
+        title:
+          label: 'Title'
+          type: label
+        description:
+          label: 'Description'
+          type: text
+        button_title:
+          label: 'Button Title'
+          type: label
+        redirect_url:
+          label: 'Button Url'
+          type: label
+    mental_resilience_block:
+      label: 'Mental Resilience Block'
+      type: mapping
+      mapping:
+        block_settings:
+          label: 'Block Settings'
+          type: mapping
+          mapping:
+            stress:
+              label: ' '
+              type: mapping
+              mapping:
+                title:
+                  label: 'Title'
+                  type: label
+                separator:
+                  label: 'Separator'
+                  type: label
+                separator2:
+                  label: 'Separator 2'
+                  type: label
+                introduction:
+                  label: 'Introduction'
+                  type: text
+                instruction:
+                  label: 'Instruction'
+                  type: text
+                result:
+                  label: 'Result'
+                  type: mapping
+                  mapping:
+                    title:
+                      label: 'Title'
+                      type: label
+                    green:
+                      label: 'Green'
+                      type: text_format
+                    orange:
+                      label: 'Orange'
+                      type: text_format
+                    red:
+                      label: 'Red'
+                      type: text_format
+            burnout:
+              label: ' '
+              type: mapping
+              mapping:
+                title:
+                  label: 'Title'
+                  type: label
+                separator:
+                  label: 'Separator'
+                  type: label
+                separator2:
+                  label: 'Separator 2'
+                  type: label
+                separator3:
+                  label: 'Separator 3'
+                  type: label
+                separator4:
+                  label: 'Separator 4'
+                  type: label
+                introduction:
+                  label: 'Introduction'
+                  type: text
+                instruction:
+                  label: 'Instruction'
+                  type: text
+                result:
+                  label: 'Result'
+                  type: mapping
+                  mapping:
+                    green:
+                      label: 'Green'
+                      type: text_format
+                    orange:
+                      label: 'Orange'
+                      type: text_format
+                    red:
+                      label: 'Red'
+                      type: text_format
+            worksituation:
+              label: ' '
+              type: mapping
+              mapping:
+                title:
+                  label: 'Title'
+                  type: label
+                title2:
+                  label: 'Title 2'
+                  type: label
+                introduction:
+                  label: 'Introduction'
+                  type: text
+                instruction:
+                  label: 'Instruction'
+                  type: text
+            thanks:
+              label: ' '
+              type: mapping
+              mapping:
+                title:
+                  label: 'Title'
+                  type: label
+                introduction:
+                  label: 'Introduction'
+                  type: text
+                instruction:
+                  label: 'Instruction'
+                  type: text
+            risk:
+              label: 'Risk Labels'
+              type: mapping
+              mapping:
+                green:
+                  label: 'Green'
+                  type: label
+                orange:
+                  label: 'Orange'
+                  type: label
+                red:
+                  label: 'Red'
+                  type: label
+        fields:
+          label: 'Fields'
+          type: mapping
+          mapping:
+            stress:
+              label: 'Stress'
+              type: mapping
+              mapping:
+                1:
+                  label: 'Stress 1'
+                  type: label
+                2:
+                  label: 'Stress 2'
+                  type: label
+                3:
+                  label: 'Stress 3'
+                  type: label
+                4:
+                  label: 'Stress 4'
+                  type: label
+                5:
+                  label: 'Stress 5'
+                  type: label
+                6:
+                  label: 'Stress 6'
+                  type: label
+                7:
+                  label: 'Stress 7'
+                  type: label
+                8:
+                  label: 'Stress 8'
+                  type: label
+                9:
+                  label: 'Stress 9'
+                  type: label
+                10:
+                  label: 'Stress 10'
+                  type: label
+            burnout:
+              label: 'Burn Out'
+              type: mapping
+              mapping:
+                1:
+                  label: 'Burn Out 1'
+                  type: label
+                2:
+                  label: 'Burn Out 2'
+                  type: label
+                3:
+                  label: 'Burn Out 3'
+                  type: label
+                4:
+                  label: 'Burn Out 4'
+                  type: label
+                5:
+                  label: 'Burn Out 5'
+                  type: label
+                6:
+                  label: 'Burn Out 6'
+                  type: label
+                7:
+                  label: 'Burn Out 7'
+                  type: label
+                8:
+                  label: 'Burn Out 8'
+                  type: label
+                9:
+                  label: 'Burn Out 9'
+                  type: label
+                10:
+                  label: 'Burn Out 10'
+                  type: label
+                11:
+                  label: 'Burn Out 11'
+                  type: label
+                12:
+                  label: 'Burn Out 12'
+                  type: label
+                13:
+                  label: 'Burn Out 13'
+                  type: label
+                14:
+                  label: 'Burn Out 14'
+                  type: label
+                15:
+                  label: 'Burn Out 15'
+                  type: label
+                16:
+                  label: 'Burn Out 16'
+                  type: label
+                17:
+                  label: 'Burn Out 17'
+                  type: label
+                18:
+                  label: 'Burn Out 18'
+                  type: label
+                19:
+                  label: 'Burn Out 19'
+                  type: label
+                20:
+                  label: 'Burn Out 20'
+                  type: label
+                21:
+                  label: 'Burn Out 21'
+                  type: label
+                22:
+                  label: 'Burn Out 22'
+                  type: label
+                23:
+                  label: 'Burn Out 23'
+                  type: label
+            worksituation:
+              label: 'Work Situation'
+              type: mapping
+              mapping:
+                1:
+                  label: 'Work Situation 1'
+                  type: label
+                2:
+                  label: 'Work Situation 2'
+                  type: label
+                3:
+                  label: 'Work Situation 3'
+                  type: label
+                4:
+                  label: 'Work Situation 4'
+                  type: label
+                5:
+                  label: 'Work Situation 5'
+                  type: label
+                6:
+                  label: 'Work Situation 6'
+                  type: label
+                7:
+                  label: 'Work Situation 7'
+                  type: label
+                8:
+                  label: 'Work Situation 8'
+                  type: label
+                9:
+                  label: 'Work Situation 9'
+                  type: label
+                10:
+                  label: 'Work Situation 10'
+                  type: label

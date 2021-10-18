@@ -1,0 +1,106 @@
+langcode: nl
+mental_resilience_teaser_block:
+  title: "Hoe groot is je mentale veerkracht op het werk?"
+  description: "Beantwoord een aantal vragen en ontvang een advies."
+  button_title: "Doe de test"
+  redirect_url: "/"
+mental_resilience_block:
+  block_settings:
+    stress:
+      title: "STAP 1 van 5 - Stress"
+      separator: "Psychische spanningsklachten"
+      introduction: "Met behulp van de volgende vragenlijst - de BAT, ontwikkeld door onderzoekers van de KU Leuven - kan u uw niveau van stress en uw risico op burn-out inschatten. Deze vragenlijst heeft betrekking op hoe u uw werk beleeft en hoe u zich daarbij voelt. Na het invullen van de vragenlijst ontvangt u onmiddellijk gepersonaliseerde feedback: de graad van de klachten van stress of burn-out die u heeft aangeduid in de vragenlijst, en een gerichte doorverwijzing naar de informatie op deze website die voor u het meest relevant is. Belangrijk om te weten: Deze vragenlijst laat in geen geval toe een medische diagnose te stellen, zonder het bijkomende onderzoek door een expert: arts of psycholoog. Ze meet enkel de klachten van stress en burn-out die personen kunnen ervaren. Op basis van uw antwoorden wordt een score berekend, die vervolgens wordt vergeleken met scores van groepen van personen die al dan niet door experts de diagnose burn-out hadden gekregen (dit zijn \"grenswaarden\" die zijn bepaald in wetenschappelijk onderzoek). Om uw persoonlijke feedback te kunnen berekenen, is het noodzakelijk dat u op alle vragen rond stress of burn-out antwoordt."
+      instruction: "Deze volgende 10 uitspraken verwijzen naar verschillende soorten stressklachten. Bij elke uitspraak kan u aanduiden hoe vaak op u van toepassing (nooit, zelden, soms, vaak of altijd). Vervolgens krijgt u een eerste feedback."
+      result:
+        title: "STAP 2 van 5 - Uw resultaat"
+        green:
+          value: "U bevindt zich in de veilige zone.<br>Blijf inzetten op uw mentale veerkracht en uw hulpbronnen op het werk en daarbuiten om stress te <a href=\"https://google.com\">voorkomen</a>.<br><br>Mentale veerkracht is een sterke persoonlijke hulpbron. Ze kan helpen een evenwicht te houden tussen de werkeisen en de hulpbronnen op het werk, in perioden dat de werkeisen even meer doorwegen. Op die manier helpt ze u opgewassen te blijven tegen stress op het werk.<br><br>U kan stress ook een stapje voor blijven, door waakzaam te blijven voor <a href=\"https://google.com\">de signalen en de mogelijke oorzaken van stress op het werk</a>. Een onevenwicht tussen de werkeisen en de hulpbronnen op het werk kan immers aanleiding geven tot stress. Herkent u bij uzelf al signalen van stress of is er naar uw gevoel al langere tijd een onevenwicht tussen de werkeisen en de hulpbronnen op het werk? Bespreek dit met de personen in uw werkomgeving die hierin expert zijn en die u kunnen helpen ernstiger stressklachten te voorkomen."
+          format: "full_html"
+        orange:
+          value: "U hebt duidelijk last van stressklachten, zonder dat deze al problematisch werden.<br>Blijf waakzaam voor uw <a href=\"https://google.com\">signalen van stress</a>. U kan ook nu al specifieker uw risico op burn-out inschatten, met behulp van de volgende vragenlijst.<br><br>Sta ook stil bij de <a href=\"https://google.com\">mogelijke oorzaken</a> van uw stressklachten in uw werksituatie. Een onevenwicht tussen de werkeisen en de hulpbronnen op het werk (hoge werkeisen en onvoldoende hulpbronnen) kan immers aanleiding geven tot stress, en wanneer het langer aanhoudt tot burn-out.<br><br>Aarzel niet om nu al gebruik te maken van de <a href=\"https://google.com\">steun en hulp in uw omgeving</a>: op het werk, en daarbuiten. Deze kan u helpen stress te verhelpen en een burn-out te voorkomen."
+          format: "full_html"
+        red:
+          value: "U hebt uitgesproken stressklachten en u behoort waarschijnlijk tot de risicogroep voor burn-out.<br>Vul het volgende deel van de vragenlijst in om uw risico op burn-out juist in te schatten.<br><br>Aarzel ook niet om nu al gebruik te maken van de <a href=\"https://google.com\">steun en hulp in uw omgeving</a>: op het werk, en daarbuiten. Deze kan u helpen stress te verhelpen en een burn-out te voorkomen."
+          format: "full_html"
+    burnout:
+      title: "STAP 3 van 5 - BURN-OUT"
+      separator: "Uitputting"
+      introduction: ""
+      instruction: "Deze volgende 23 uitspraken verwijzen naar typische brun-out klachten. Bij elke uitspraak kan u aanduiden hoe vaak op u van toepassing (nooit, zelden, soms, vaak of altijd). Vervolgens krijgt u onmiddellijk feedback."
+      result:
+        title: "STAP 4 van 5 - Uw resultaat"
+        green:
+          value: "U bevindt zich in de veilige zone.<br>Blijf inzetten op uw mentale veerkracht en uw hulpbronnen op het werk en daarbuiten om stress en burn-out te <a href=\"https://google.com\">voorkomen</a>.<br><br>Mentale veerkracht is een sterke persoonlijke hulpbron. Ze kan helpen een evenwicht te houden tussen de werkeisen en de hulpbronnen op het werk, in perioden dat de werkeisen even meer doorwegen. Op die manier helpt ze u opgewassen te blijven tegen stress op het werk.<br><br>U kan burn-out ook een stapje voorblijven, door waakzaam te blijven voor <a href=\"https://google.com\">de signalen en de mogelijke oorzaken van stress en burn-out op het werk</a>. Een onevenwicht tussen de werkeisen en de hulpbronnen op het werk (hoge werkeisen en onvoldoende hulpbronnen) kan immers aanleiding geven tot stress, en wanneer het langer aanhoudt tot burn-out.<br>Ervaart u al stressklachten of is er naar uw gevoel al langere tijd een onevenwicht tussen de werkeisen en de hulpbronnen op het werk? Wacht niet langer dit te <a href=\"https://google.com\">bespreken</a> met de personen in uw werkomgeving die hierin expert zijn en die u kunnen helpen ernstiger stressklachten of burn-out te voorkomen."
+          format: "full_html"
+        orange:
+          value: "U vertoont verhoogde klachten, waardoor er risico is op het oplopen van een burn-out. Op dit ogenblik heeft u echter nog geen problematische score. Blijf waakzaam voor uw <a href=\"http://google.com\">signalen</a>.<br><br>Sta ook stil bij de <a href=\"http://google.com\">mogelijke</a> oorzaken van uw klachten in uw werksituatie.<br>Herkent u een onevenwicht tussen de werkeisen en de hulpbronnen op het werk (specifiek: hoge werkeisen en onvoldoende hulpbronnen)? Ervaart u dit onevenwicht al langer?<br>Wacht niet langer dit te <a href=\"http://google.com\">bespreken</a> met de personen in uw werkomgeving die hierin expert zijn.<br>Aarzel ook niet om gebruik te maken van de <a href=\"http://google.com\">steun en hulp in uw omgeving</a>: op het werk, en daarbuiten. Deze kan u helpen een burn-out te voorkomen."
+          format: "full_html"
+        red:
+          value: "U scoort hoog op burn-outklachten – het is mogelijk dat u op dit ogenblik een burn-out hebt. Wacht niet langer om gebruik te maken van de <a href=\"https://google.com\">professionele steun en zorg in uw omgeving</a>: op het werk of daarbuiten. Deze kan u begeleiden en helpen te herstellen."
+          format: "full_html"
+    worksituation:
+      title: "STAP 5 van 5 - Uw werkbeleving"
+      title2: "Enkele persoonskenmerken"
+      introduction: ""
+      instruction: "Hierna volgen nog enkele vragen over uw werksituatie en uw persoonskenmerken. Uw antwoorden op deze vragen zullen enkel worden gebruikt voor wetenschappelijk onderzoek op het geheel van de gegevens verzameld op deze website; u ontvangt geen individuele feedback bij dit deel. In dit deel kan u de vragen overslaan die u niet wenst te beantwoorden. Uw antwoorden op deze vragen zijn wel heel waardevol: ze dragen bij tot het wetenschappelijk onderzoek naar burn-out."
+    thanks:
+      title: "Dankuwel"
+      introduction: "Dankuwel om deel te nemen aan dit onderzoek."
+      instruction: ""
+    risk:
+      green: "Low Risk"
+      orange: "Medium Risk"
+      red: "High Risk"
+  fields:
+    stress:
+      1: "Ik heb problemen met inslapen of doorslapen"
+      2: "Ik heb de neiging om te piekeren"
+      3: "Ik voel mij opgejaagd en gespannen"
+      4: "Ik voel me angstig en/of heb last van paniekaanvallen"
+      5: "Ik heb moeite met drukte en/of lawaai"
+      6: "Ik heb last van hartkloppingen of pijn in de borststreek"
+      7: "Ik heb last van maag- en/of darmklachten"
+      8: "Ik heb last van hoofdpijn"
+      9: "Ik heb last van pijnlijke spieren, bijvoorbeeld in de nek, schouder of rug"
+      10: "Ik word snel ziek"
+    burnout:
+      1: "Op het werk voel ik me geestelijk uitgeput"
+      2: "Alles wat ik doe op mijn werk, kost mij moeite"
+      3: "Ik raak maar niet uitgerust nadat ik gewerkt heb"
+      4: "Op het werk voel ik me lichamelijk uitgeput"
+      5: "Als ik ‘s morgens opsta, mis ik de energie om aan de werkdag te beginnen"
+      6: "Ik wil wel actief zijn op het werk, maar het lukt mij niet"
+      7: "Als ik me inspan op het werk, dan word ik snel moe"
+      8: "Op het einde van de werkdag voel ik me mentaal uitgeput en leeg"
+      9: "Ik kan geen belangstelling en enthousiasme opbrengen voor mijn werk"
+      10: "Op mijn werk denk ik niet veel na en functioneer ik op automatische piloot"
+      11: "Ik voel een sterke weerzin tegen mijn werk"
+      12: "Mijn werk laat mij onverschillig"
+      13: "Ik ben cynisch over wat mijn werk voor anderen betekent"
+      14: "Op het werk kan ik er mijn aandacht moeilijk bijhouden"
+      15: "Tijdens mijn werk heb ik moeite om helder na te denken"
+      16: "Ik ben vergeetachtig en verstrooid tijdens mijn werk"
+      17: "Als ik aan het werk ben, kan ik me moeilijk concentreren"
+      18: "Ik maak fouten in mijn werk omdat ik er met mijn hoofd ‘niet goed bij ben’"
+      19: "Op mijn werk heb ik het gevoel geen controle te hebben over mijn emoties"
+      20: "Ik herken mezelf niet in de wijze waarop ik emotioneel reageer op mijn werk"
+      21: "Tijdens mijn werk raak ik snel geïrriteerd als de dingen niet lopen zoals ik dat wil"
+      22: "Ik word kwaad of verdrietig op mijn werk zonder goed te weten waarom"
+      23: "Op mijn werk kan ik onbedoeld te sterk emotioneel reageren"
+    worksituation:
+      1: "Mijn werkinhoud stemt overeen met mijn capaciteiten."
+      2: "Ik vind dat ik te hard moet werken."
+      3: "Mijn werk is goed te combineren met mijn privéleven."
+      4: "Ik kan rekenen op de steun van mijn rechstreekse leidinggevende."
+      5: "Ik kan in mijn werk veel beslissingen zelf nemen."
+      6: "Ik maak me zorgen dat ik mijn job zou kunnen verliezen."
+      7: "Ik kan rekenen op de steun van mijn collega's."
+      8: "Ik kom in mijn werk situaties tegen die het me emotioneel moeilijk maken."
+      9: "Bij het nemen van beslissingen wordt er rekening gehouden met mijn mening."
+      10: "Ik weet exact wat anderen op mijn werk van mij verwachten."
+dependencies:
+  module:
+    - pulso_battool
+  enforced:
+    module:
+      - pulso_battool

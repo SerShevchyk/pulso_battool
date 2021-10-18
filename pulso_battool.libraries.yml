@@ -1,0 +1,8 @@
+pulso_battool:
+  css:
+    theme:
+      css/pulso_battool.css: {}
+  js:
+    js/pulso_battool.js: {}
+  dependencies:
+    - core/jquery

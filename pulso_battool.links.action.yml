@@ -1,0 +1,8 @@
+bat_tool_result._bat_tool_result_add:
+  route_name: entity.bat_tool_result.bat_tool_result_add
+  title: 'Add Bat Tool Result'
+
+# Where will the link appear, defined by route name.
+appears_on:
+  - entity.bat_tool_result.collection
+  - entity.bat_tool_result.canonical

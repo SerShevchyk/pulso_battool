@@ -1,0 +1,110 @@
+langcode: en
+mental_resilience_teaser_block:
+  title: "How great is your mental resilience at work?"
+  description: "Answer a few questions and receive advice."
+  button_title: "Do the test"
+  redirect_url: "/"
+mental_resilience_block:
+  block_settings:
+    stress:
+      title: "STEP 1 OF 5 - STRESS"
+      separator: "Psychological complaints"
+      separator2: "Psychosomatic complaints"
+      introduction: "With the help of the BAT, you can test your level of stress and assess your risk of burnout."
+      instruction: "The following statements relate to how you experience your work and how you feel about it. For each statement, you can indicate how often it applies to you (never, rarely, sometimes, often or always)."
+      result:
+        title: "STEP 2 OF 5 - YOUR RESULTS"
+        green:
+          value: "You are in the safe zone. Keep working on your mental resilience and your resources at work and beyond to prevent stress and burnout."
+          format: "full_html"
+        orange:
+          value: "You already have more severe stress symptoms and may belong to the risk group for burnout. Fill in the following questionnaire to assess your risk of burnout more accurately. Do not hesitate to make use of the support and help in your environment: at work and elsewhere. This can help you to relieve stress and prevent burnout."
+          format: "full_html"
+        red:
+          value: "You have pronounced stress symptoms and probably belong to the risk group for burnout. Fill in the following part of the questionnaire to assess your risk of burnout more accurately. Do not hesitate to make use of the support and help in your environment: at work and elsewhere. This can help you to relieve stress and prevent burnout."
+          format: "full_html"
+    burnout:
+      title: "STEP 3 OF 5 - BURN-OUT"
+      separator: "Exhaustion"
+      separator2: "Mental distance"
+      separator3: "Cognitive impairment"
+      separator4: "Emotional impairment"
+      introduction: ""
+      instruction: "The following statements relate to how you experience your work and how you feel about it. For each statement, you can indicate how often it applies to you (never, rarely, sometimes, often or always)."
+      result:
+        title: "STEP 4 OF 5 - YOUR RESULT"
+        green:
+          value: "You are in the safe zone. Keep working on your mental resilience and your resources at work and outside to prevent stress and burnout."
+          format: "full_html"
+        orange:
+          value: "You are at risk of burnout. Do not hesitate to make use of the support and help in your environment: at work, and outside. This can help you prevent burnout."
+          format: "full_html"
+        red:
+          value: "You probably already have symptoms of burnout. Do not wait any longer to make use of the support and care in your environment: at work or outside. This can help you recover from these burnout symptoms."
+          format: "full_html"
+    worksituation:
+      title: "STEP 5 OF 5 - YOUR WORK SITUATION"
+      title2: "Your personal characteristics"
+      introduction: ""
+      instruction: "Below are a few more questions about your work situation and your personal characteristics. Your answers to these questions will only be used for research into trends and over large groups of users."
+    thanks:
+      title: "Thank you!"
+      introduction: "Thank you for participating in the research."
+      instruction: ""
+    risk:
+      green: "Low Risk"
+      orange: "Medium Risk"
+      red: "High Risk"
+  fields:
+    stress:
+      1: "I have trouble falling or staying asleep"
+      2: "I tend to worry"
+      3: "I feel tense and stressed"
+      4: "I feel anxious and/or suffer from panic attacks"
+      5: "Noise and crowds disturb me"
+      6: "I suffer from palpitations or chest pain"
+      7: "I suffer from stomach and/or intestinal complaints"
+      8: "I suffer from headaches"
+      9: "I suffer from muscle pain, for example in the neck, shoulder or back"
+      10: "I often get sick"
+    burnout:
+      1: "At work, I feel mentally exhausted"
+      2: "Everything I do at work requires a great deal of effort"
+      3: "After a day at work, I find it hard to recover my energy"
+      4: "At work, I feel physically exhausted"
+      5: "When I get up in the morning, I lack the energy to start a new day at work"
+      6: "I want to be active at work, but somehow I am unable to manage"
+      7: "When I exert myself at work, I quickly get tired"
+      8: "At the end of my working day, I feel mentally exhausted and drained"
+      9: "I struggle to find any enthusiasm for my work"
+      10: "At work, I do not think much about what I am doing and I function on autopilot"
+      11: "I feel a strong aversion towards my job"
+      12: "I feel indifferent about my job"
+      13: "I’m cynical about what my work means to others"
+      14: "At work, I have trouble staying focused"
+      15: "At work I struggle to think clearly"
+      16: "I’m forgetful and distracted at work"
+      17: "When I’m working, I have trouble concentrating"
+      18: "I make mistakes in my work because I have my mind on other things"
+      19: "At work, I feel unable to control my emotions"
+      20: "I do not recognize myself in the way I react emotionally at work"
+      21: "During my work I become irritable when things don’t go my way"
+      22: "I get upset or sad at work without knowing why"
+      23: "At work I may overreact unintentionally"
+    worksituation:
+      1: "My work content matches my capabilities."
+      2: "I think I have to work too hard."
+      3: "I can easily combine my work with my private life."
+      4: "I can count on the support of my direct line manager."
+      5: "I can take many decisions myself in my job."
+      6: "I worry about losing my job."
+      7: "I can count on the support of my colleagues."
+      8: "In my job, I encounter situations that make it emotionally difficult for me."
+      9: "My opinion is taken into account when making decisions."
+      10: "I know exactly what others expect of me at work."
+dependencies:
+  module:
+    - pulso_battool
+  enforced:
+    module:
+      - pulso_battool

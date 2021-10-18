@@ -1,0 +1,10 @@
+'delete bat_tool_result entity':
+  title: Delete Bat Tool Result content.
+'add bat_tool_result entity':
+  title: Add Bat Tool Result content
+'view bat_tool_result entity':
+  title: View Bat Tool Result content
+'edit bat_tool_result entity':
+  title: Edit Bat Tool Result content
+'administer bat_tool_result entity':
+  title: Administer Bat Tool Result settings

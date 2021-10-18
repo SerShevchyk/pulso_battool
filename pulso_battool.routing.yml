@@ -1,0 +1,55 @@
+entity.bat_tool_result.canonical:
+  path: '/bat-tool-result/{bat_tool_result}'
+  defaults:
+    _entity_view: 'bat_tool_result'
+    _title: 'Bat Tool Result Content'
+  requirements:
+    # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'bat_tool_result.view'
+
+entity.bat_tool_result.collection:
+  path: '/bat-tool-result/list'
+  defaults:
+    _entity_list: 'bat_tool_result'
+    _title: 'Bat Tool Result List'
+  requirements:
+    # Checks for permission directly.
+    _permission: 'view bat_tool_result entity'
+
+entity.bat_tool_result.bat_tool_result_add:
+  path: '/bat-tool-result/add'
+  defaults:
+    _entity_form: bat_tool_result.add
+    _title: 'Add Bat Tool Result'
+  requirements:
+    _entity_create_access: 'bat_tool_result'
+
+entity.bat_tool_result.edit_form:
+  path: '/bat-tool-result/{bat_tool_result}/edit'
+  defaults:
+    _entity_form: bat_tool_result.edit
+    _title: 'Edit Bat Tool Result'
+  requirements:
+    _entity_access: 'bat_tool_result.edit'
+
+entity.bat_tool_result.delete_form:
+  path: '/bat-tool-result/{bat_tool_result}/delete'
+  defaults:
+    _entity_form: bat_tool_result.delete
+    _title: 'Delete Bat Tool Result'
+  requirements:
+    _entity_access: 'bat_tool_result.delete'
+
+entity.bat_tool_result.bat_tool_result_settings:
+  path: 'admin/structure/bat-tool-result-settings'
+  defaults:
+    _form: '\Drupal\pulso_battool\Form\BatToolResultSettingsForm'
+    _title: 'Bat Tool Result Settings'
+  requirements:
+    _permission: 'administer bat_tool_result entity'
+pulso_battool.exports.bat_tool_result:
+  path: '/exports/bat-tool-result'
+  defaults:
+    _controller: '\Drupal\pulso_battool\Controller\BatToolResultExport::build'
+  requirements:
+    _permission: 'administer users'

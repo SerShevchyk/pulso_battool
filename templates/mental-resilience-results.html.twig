@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{{ attach_library('bootstrap_barrio/form') }}
+{{ form.title }}
+{{ form.introduction }}
+<div class="clearfix bat-tool-result">
+  <div class="row">
+    <div class="col-md-4 col-md-push-1 col-sm-8 col-sm-push-2 col-xs-8 col-xs-push-2">{{ form.svg }}</div>
+    <div class="col-md-5 col-md-push-1 col-sm-12 col-xs-12"><p>{{ form.text }}</p></div>
+  </div>
+</div>
+{{ form.form_token }}
+{{ form.form_build_id }}
+{{ form.form_id }}
+{{ form.type }}
+{{ form.actions }}

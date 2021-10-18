@@ -1,0 +1,4 @@
+pulso_battool.settings:
+  route_name: entity.bat_tool_result.canonical
+  title: Settings
+  base_route: entity.bat_tool_result.canonical

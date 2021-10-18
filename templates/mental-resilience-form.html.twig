@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{{ attach_library('bootstrap_barrio/form') }}
+{{ form.title }}
+{{ form.introduction }}
+{{ form.instruction }}
+<div class="bat-tool-table bat-tool-likert-table bat-tool-likert-scale-5">
+  <div class="bat-tool-table-header bat-tool-likert-table-header">
+    <div class="bat-tool-th text-center">{{ "Never"|t }}</div>
+    <div class="bat-tool-th text-center">{{ "Rarely"|t }}</div>
+    <div class="bat-tool-th text-center">{{ "Sometimes"|t }}</div>
+    <div class="bat-tool-th text-center">{{ "Often"|t }}</div>
+    <div class="bat-tool-th text-center">{{ "Always"|t }}</div>
+  </div>
+  <div class="bat-tool-table-body bat-tool-likert-table-body">
+    <div class="bat-tool-tr bat-table-separator">
+      {{ form.separator }}
+    </div>
+    {{ form.questions }}
+  </div>
+</div>
+{{ form.form_token }}
+{{ form.form_build_id }}
+{{ form.form_id }}
+{{ form.type }}
+{{ form.actions }}

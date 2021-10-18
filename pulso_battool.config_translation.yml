@@ -1,0 +1,5 @@
+pulso_battool.settings:
+  title: 'Pulso BAT Tool Settings'
+  base_route_name: entity.bat_tool_result.bat_tool_result_settings
+  names:
+    - pulso_battool.settings

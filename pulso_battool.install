@@ -1,0 +1,48 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Implements hook_install().
+ */
+function pulso_battool_install() {
+  $questions = \Drupal::config('pulso_battool.settings')
+    ->get("mental_resilience_block.fields");
+  $definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  $newKeys = [];
+
+  // Install entity.
+  $entity_type_manager = \Drupal::entityTypeManager();
+  $entity_type_manager->clearCachedDefinitions();
+  $entity_type = $entity_type_manager->getDefinition('bat_tool_result');
+  $definition_update_manager->installEntityType($entity_type);
+
+  $entity_type = $definition_update_manager->getEntityType('bat_tool_result');
+  $keys = $entity_type->getKeys();
+  $entity_type->set('entity_keys', array_merge($keys, $newKeys));
+  $definition_update_manager->updateEntityType($entity_type);
+
+
+  $last_installed_schema_repository = \Drupal::service('entity.last_installed_schema.repository');
+  $field_storage_definitions = $last_installed_schema_repository->getLastInstalledFieldStorageDefinitions('bat_tool_result');
+  $definition_update_manager->updateFieldableEntityType($entity_type, $field_storage_definitions, $sandbox);
+
+  drupal_flush_all_caches();
+
+  return t('Installed the Bat Tool Result entity type');
+}
+
+/**
+ * Install Bat Tool Result entity type
+ */
+function pulso_battool_uninstall() {
+  $result = \Drupal::entityQuery("bat_tool_result")
+    ->execute();
+
+  $storage_handler = \Drupal::entityTypeManager()
+    ->getStorage("bat_tool_result");
+  $entities = $storage_handler->loadMultiple($result);
+  $storage_handler->delete($entities);
+
+  \Drupal::configFactory()->getEditable('pulso_battool.settings')->delete();
+}
