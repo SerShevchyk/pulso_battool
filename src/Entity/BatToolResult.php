@@ -196,6 +196,7 @@ class BatToolResult extends ContentEntityBase {
           "public_administration" => "Public administration",
           "education" => "Education",
           "self_employed" => "Self-employed or liberal profession",
+          "other" => "Other",
         ],
       ])
       ->setCardinality(1)
