@@ -4,6 +4,12 @@ mental_resilience_teaser_block:
   description: "Beantworten Sie einige Fragen und lassen Sie sich beraten."
   button_title: "Mach den Test"
   redirect_url: "/"
+mental_resilience_teaser_2_block:
+  title: "Wie groß ist Ihre mentale Belastbarkeit bei der Arbeit?"
+  description: "Beantworten Sie einige Fragen und lassen Sie sich beraten."
+  button_title: "Mach den Test"
+  redirect_url: "/"
+  image: ""
 mental_resilience_block:
   block_settings:
     stress:

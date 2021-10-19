@@ -18,6 +18,25 @@ pulso_battool.settings:
         redirect_url:
           label: 'Button Url'
           type: label
+    mental_resilience_teaser_2_block:
+      label: 'Mental Resilience Teaser 2 Block'
+      type: mapping
+      mapping:
+        title:
+          label: 'Title'
+          type: label
+        description:
+          label: 'Description'
+          type: text
+        button_title:
+          label: 'Button Title'
+          type: label
+        redirect_url:
+          label: 'Button Url'
+          type: label
+        image:
+          label: 'Image'
+          type: label
     mental_resilience_block:
       label: 'Mental Resilience Block'
       type: mapping
