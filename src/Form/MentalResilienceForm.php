@@ -562,6 +562,24 @@ class MentalResilienceForm extends FormBase {
 
     $form['personal_characteristics']["contract"] = [
       '#type' => 'radios',
+      '#title' => $this->t("What is your family situation?"),
+      '#default_value' => NULL,
+      '#options' => [
+        "single" => $this->t("Single"),
+        "single_1_child" => $this->t("Single with one child"),
+        "single_several_children" => $this->t("Single with several children"),
+        "with_partner_no_children" => $this->t("Living together or married without children"),
+        "with_partner_1_child" => $this->t("Living together or married with one child"),
+        "with_partner_several_children" => $this->t("Living together or married with several children"),
+        "newly_formed_family" => $this->t("Newly formed family (with one or more children)"),
+        "single_with_elderly" => $this->t("Single, with one or more elderly relatives living at home (parents, aunt/uncle, …)"),
+        "family_without_children" => $this->t("Family without children, with one or more elderly relatives living at home (parents, aunt/uncle, …)"),
+        "family_with_children" => $this->t("Family with one or more children, and with one or more elderly relatives living at home (parents, aunt/uncle, …)"),
+      ],
+    ];
+
+    $form['personal_characteristics']["family_situation"] = [
+      '#type' => 'radios',
       '#title' => $this->t("What type of contract do you have?"),
       '#default_value' => NULL,
       '#options' => [
@@ -595,7 +613,7 @@ class MentalResilienceForm extends FormBase {
   public function submitWorkSituation(array &$form, FormStateInterface $form_state) {
     $results = $form_state->getValues();
     $values = $this->prepareValues($results, "worksituation");
-    $additional = ["age", "gender", "diplom", "sector", "occupation", "work_time", "contract"];
+    $additional = ["age", "gender", "diplom", "sector", "occupation", "work_time", "contract", "family_situation"];
 
     $btr = \Drupal::entityTypeManager()
       ->getStorage("bat_tool_result")

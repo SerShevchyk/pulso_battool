@@ -288,6 +288,37 @@ class BatToolResult extends ContentEntityBase {
       ->setDisplayConfigurable('view', TRUE)
       ->setTranslatable(TRUE);
 
+    $fields['family_situation'] = BaseFieldDefinition::create('list_string')
+      ->setLabel(t('What is your family situation?'))
+      ->setSettings([
+        'allowed_values' => [
+          "single" => "Single",
+          "single_1_child" => "Single with one child",
+          "single_several_children" => "Single with several children",
+          "with_partner_no_children" => "Living together or married without children",
+          "with_partner_1_child" => "Living together or married with one child",
+          "with_partner_several_children" => "Living together or married with several children",
+          "newly_formed_family" => "Newly formed family (with one or more children)",
+          "single_with_elderly" => "Single, with one or more elderly relatives living at home (parents, aunt/uncle, …)",
+          "family_without_children" => "Family without children, with one or more elderly relatives living at home (parents, aunt/uncle, …)",
+          "family_with_children" => "Family with one or more children, and with one or more elderly relatives living at home (parents, aunt/uncle, …)",
+        ],
+      ])
+      ->setCardinality(1)
+      ->setDefaultValue("")
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -2,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'options_select',
+        'weight' => -2,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setTranslatable(TRUE);
+
     // Questions
     $questions = [
       "stress" => [
