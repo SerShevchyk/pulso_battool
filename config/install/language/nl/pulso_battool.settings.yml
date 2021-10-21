@@ -4,6 +4,12 @@ mental_resilience_teaser_block:
   description: "Beantwoord een aantal vragen en ontvang een advies."
   button_title: "Doe de test"
   redirect_url: "/"
+mental_resilience_teaser_2_block:
+  title: "Hoe groot is je mentale veerkracht op het werk?"
+  description: "Beantwoord een aantal vragen en ontvang een advies."
+  button_title: "Doe de test"
+  redirect_url: "/"
+  image: ""
 mental_resilience_block:
   block_settings:
     stress:

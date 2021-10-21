@@ -4,6 +4,12 @@ mental_resilience_teaser_block:
   description: "Répondez à quelques questions et recevez des conseils."
   button_title: "Faites le test"
   redirect_url: "/"
+mental_resilience_teaser_2_block:
+  title: "Quelle est votre résilience mentale au travail ?"
+  description: "Répondez à quelques questions et recevez des conseils."
+  button_title: "Faites le test"
+  redirect_url: "/"
+  image: ""
 mental_resilience_block:
   block_settings:
     stress:

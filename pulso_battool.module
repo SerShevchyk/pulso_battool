@@ -13,6 +13,11 @@ function pulso_battool_theme($existing, $type, $theme, $path): array {
         'data' => NULL,
       ],
     ],
+    'mental_resilience_teaser_2_block' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
     'mental_resilience_block' => [
       'variables' => [
         'data' => NULL,

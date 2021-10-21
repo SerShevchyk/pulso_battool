@@ -1,0 +1,112 @@
+langcode: de
+mental_resilience_teaser_block:
+  title: "Wie groß ist Ihre mentale Belastbarkeit bei der Arbeit?"
+  description: "Beantworten Sie einige Fragen und lassen Sie sich beraten."
+  button_title: "Mach den Test"
+  redirect_url: "/"
+mental_resilience_teaser_2_block:
+  title: "Wie groß ist Ihre mentale Belastbarkeit bei der Arbeit?"
+  description: "Beantworten Sie einige Fragen und lassen Sie sich beraten."
+  button_title: "Mach den Test"
+  redirect_url: "/"
+  image: ""
+mental_resilience_block:
+  block_settings:
+    stress:
+      title: "Schritt 1 von 5 - Stress"
+      separator: "Psychische spanningsklachten"
+      introduction: "Mit Hilfe des folgenden Fragebogens - dem BAT, der von Forschern der KU Leuven entwickelt wurde - können Sie Ihr Stressniveau und Ihr Burnout-Risiko einschätzen.<br>Dieser Fragebogen bezieht sich darauf, wie Sie Ihre Arbeit erleben und wie Sie sich dabei fühlen.<br>Nach dem Ausfüllen des Fragebogens erhalten Sie sofort ein personalisiertes Feedback über den Grad der Stress- und Burnout-Beschwerden, die Sie im Fragebogen angegeben haben, sowie auch gezielte Hinweise auf die Informationen auf dieser Website, die für Sie die größte Relevanz aufweisen.<br><br>Wichtig zu wissen:<br>Dieser Fragebogen ermöglicht keinesfalls eine medizinische Diagnose ohne zusätzliche Untersuchung durch einen Fachmann: einen Arzt oder Psychologen. Er misst lediglich die Stress- und Burnout-Beschwerden, die Personen empfinden können. Auf der Grundlage Ihrer Antworten wird eine Punktezahl berechnet, die anschließend mit Punktezahlen von Personengruppen verglichen wird, die eventuell von Fachleuten die Diagnose Burnout bekommen hatten (dies sind „Grenzwerte”, die in der wissenschaftlichen Forschung festgelegt wurden).<br>Um Ihr persönliches Feedback berechnen zu können, müssen Sie alle Fragen zu Stress oder Burnout beantworten."
+      instruction: "Diese folgenden 10 Aussagen verweisen auf verschiedene Arten von Stressbeschwerden.<br>Bei jeder Aussage können Sie angeben, wie oft diese für Sie zutreffen (niemals, selten, manchmal, oft oder immer).<br>Anschließend erhalten Sie ein erstes Feedback."
+      result:
+        title: "Schritt 2 von 5 - Dein Ergebnis"
+        green:
+          value: "Sie befinden sich in der sicheren Zone.<br>Setzen Sie weiterhin auf Ihre mentale Resilienz und Ihre Ressourcen am Arbeitsplatz und anderswo, um Stress zu <a href=\"https://google.com/search?q=vermeiden\">vermeiden</a>.<br><br>Mentale Resilienz ist eine starke persönliche Ressource. Sie kann dabei helfen, ein Gleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz zu halten, vor allem in Zeiten, in denen die beruflichen Anforderungen schwerer ins Gewicht fallen. Auf diese Weise hilft sie ihnen, dem Stress am Arbeitsplatz weiterhin gewachsen zu sein.<br><br>Sie können dem Stress auch einen Schritt voraus bleiben, indem Sie auf <a href=\"https://google.com/search?q=erkennen\">die Signale und die möglichen Ursachen von beruflichem Stress achten</a>. Ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz kann nämlich Stress verursachen.<br>Erkennen Sie bei sich selbst bereits Stresssignale oder gibt es Ihrer Meinung nach bereits seit längerer Zeit ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz? <a href=\"https://google.com/search?q=vermeiden\">Besprechen Sie dies</a> mit den Personen in Ihrem beruflichen Umfeld, die darin Experten sind und die Ihnen helfen können, schwerere Stressbeschwerden zu vermeiden."
+          format: "full_html"
+        orange:
+          value: "Sie leiden eindeutig an Stressbeschwerden, ohne dass diese bereits problematisch wurden.<br>Achten Sie auf Ihre <a href=\"https://google.com/search?q=erkennen\">Stresssignale</a>. Sie können Ihr Burnout-Risiko auch jetzt schon spezifischer einschätzen, mit Hilfe des folgenden Fragebogens.<br><br>Denken Sie auch an die <a href=\"https://google.com/search?q=erkennen\">möglichen Ursachen</a> Ihrer Stressbeschwerden in Ihrer Arbeitssituation. Ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz (hohe berufliche Anforderungen und unzureichende Ressourcen) kann nämlich Stress verursachen, bei längerer Dauer auch Burnout.<br><br>Zögern Sie nicht, die <a href=\"https://google.com/search?q=vermeiden\">Unterstützung und Hilfe in Ihrer Umgebung in Anspruch zu nehmen</a>: am Arbeitsplatz und anderswo. Dies kann Ihnen helfen, Stress zu überwinden und Burnout zu vermeiden."
+          format: "full_html"
+        red:
+          value: "Sie haben ausgeprägte Stressbeschwerden und gehören wahrscheinlich zur Risikogruppe für Burnout.<br>Füllen Sie den folgenden Teil des Fragebogens aus, um Ihr Burnout-Risiko richtig einzuschätzen.<br><br>Zögern Sie nicht, die <a href=\"https://google.com/search?q=vermeiden\">Unterstützung und Hilfe in Ihrer Umgebung</a> in Anspruch zu nehmen: am Arbeitsplatz und anderswo. Dies kann Ihnen helfen, Stress zu überwinden und Burnout zu vermeiden."
+          format: "full_html"
+    burnout:
+      title: "Schritt 3 von 5 - Burn-out"
+      separator: "Erschöpfung"
+      introduction: ""
+      instruction: "Diese folgenden 23 Aussagen verweisen auf typische Burnout-Beschwerden.<br>Bei jeder Aussage können Sie angeben, wie oft diese für Sie zutreffen (niemals, selten, manchmal, oft oder immer).<br>Anschließend bekommen Sie sofort ein Feedback."
+      result:
+        title: "Schritt 4 von 5 - Dein Ergebnis"
+        green:
+          value: "Sie befinden sich in der sicheren Zone.<br>Setzen Sie weiterhin auf Ihre mentale Resilienz und Ihre Ressourcen am Arbeitsplatz und anderswo, um Stress und Burnout zu <a href=\"https://google.com/search?q=vermeiden\">vermeiden</a>.<br><br>Mentale Resilienz ist eine starke persönliche Ressource. Sie kann dabei helfen, ein Gleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz zu halten, vor allem in Zeiten, in denen die beruflichen Anforderungen schwerer ins Gewicht fallen. Auf diese Weise hilft sie ihnen, dem Stress am Arbeitsplatz weiterhin gewachsen zu sein.<br><br>Sie können dem Burnout auch einen Schritt voraus bleiben, indem Sie auf <a href=\"https://google.com/search?q=erkennen\">die Signale und die möglichen Ursachen von Stress und Burnout am Arbeitsplatz achten</a>. Ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz (hohe berufliche Anforderungen und unzureichende Ressourcen) kann nämlich Stress veranlassen, und bei längerer Dauer auch Burnout.<br>Erleben Sie bereits Stresssignale oder besteht Ihrem Gefühl nach bereits seit längerer Zeit ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz? Warten Sie nicht länger, um dies mit den Personen in Ihrem Arbeitsumfeld zu <a href=\"https://google.com/search?q=vermeiden\">besprechen</a>, die hierin Experten sind und die Ihnen helfen können, schwerere Stressbeschwerden oder Burnout zu vermeiden."
+          format: "full_html"
+        orange:
+          value: "Sie weisen erhöhte Beschwerden auf, wodurch ein Burnout-Risiko besteht. Derzeit haben Sie jedoch noch keine problematische Punktezahl. Achten Sie weiterhin auf Ihre <a href=\"https://google.com/search?q=erkennen\">Signale</a>.<br><br>Denken Sie auch an die <a href=\"https://google.com/search?q=erkennen\">möglichen Ursachen</a> Ihrer Beschwerden in Ihrem beruflichen Umfeld.<br>Erkennen Sie ein Ungleichgewicht zwischen den beruflichen Anforderungen und den Ressourcen am Arbeitsplatz (spezifisch: hohe berufliche Anforderungen und unzureichende Ressourcen)? Spüren Sie dieses Ungleichgewicht schon länger?<br>Warten Sie nicht länger, um dies mit den Personen in Ihrem beruflichen Umfeld zu <a href=\"https://google.com/search?q=vermeiden\">besprechen</a>, die hierin Experten sind.<br>Zögern Sie nicht, die <a href=\"https://google.com/search?q=vermeiden\">Unterstützung und Hilfe in Ihrer Umgebung in Anspruch zu nehmen</a>: am Arbeitsplatz und anderswo. Dies kann Ihnen helfen, einen Burnout zu vermeiden."
+          format: "full_html"
+        red:
+          value: "Sie haben eine hohe Punktezahl in Bezug auf Burnout-Beschwerden - es ist möglich, dass sie derzeit an einem Burnout leiden. Warten Sie nicht länger, um <a href=\"https://google.com/search?q=genesen\">professionelle Unterstützung und Betreuung in Ihrer Umgebung in Anspruch zu nehmen</a>: am Arbeitsplatz oder anderswo. Diese kann Sie begleiten und Ihnen helfen, sich wieder zu erholen."
+          format: "full_html"
+    worksituation:
+      title: "Schritt 5 von 5 - Ihre Arbeitserfahrung"
+      title2: "Einige persönliche Merkmalen"
+      introduction: ""
+      instruction: "Nachstehend folgen 8 Fragen über Ihre berufliche Situation und wie Sie diese erfahren.<br>Bei jeder Aussage können Sie angeben, in welchem Maße Sie zustimmen. Es gibt keine richtigen oder falschen Antworten; es geht darum, was Sie empfinden."
+    thanks:
+      title: "Vielen Dank"
+      introduction: "Vielen Dank für Ihre Teilnahme an dieser Untersuchung."
+      instruction: ""
+    risk:
+      green: "Low Risk"
+      orange: "Medium Risk"
+      red: "High Risk"
+  fields:
+    stress:
+      1: "Ich habe Probleme einzuschlafen oder durchzuschlafen"
+      2: "Ich neige dazu, mir Sorgen zu machen"
+      3: "Ich fühle mich angespannt und gestresst"
+      4: "Ich fühle mich ängstlich oder leide an Panikattacken"
+      5: "Lärm oder Menschenmengen stören mich"
+      6: "Ich leide an Herzrasen oder Brustschmerzen"
+      7: "Ich leide an Magen- oder Darmbeschwerden"
+      8: "Ich leide an Kopfschmerzen"
+      9: "Ich leide an Muskelschmerzen, zum Beispiel in Nacken, Schulter oder Rücken"
+      10: "Ich werde oft krank"
+    burnout:
+      1: "Bei der Arbeit fühle ich mich psychisch erschöpft"
+      2: "Alles was ich bei der Arbeit tue, kostet mich große Mühe"
+      3: "Nach einem Arbeitstag fällt es mir schwer mich zu erholen"
+      4: "Bei der Arbeit fühle ich mich körperlich erschöpft"
+      5: "Wenn ich morgens aufstehe, fehlt mir die Energie einen neuen Arbeitstag zu beginnen"
+      6: "Ich will bei der Arbeit aktiv sein, aber irgendwie schaffe ich es nicht"
+      7: "Wenn ich mich bei der Arbeit anstrenge, werde ich schneller müde als gewöhnlich"
+      8: "Am Ende meines Arbeitstages fühle ich mich psychisch erschöpft und ausgelaugt"
+      9: "Ich kann keine Begeisterung für meine Arbeit aufbringen"
+      10: "Bei der Arbeit denke ich nicht darüber nach was ich tue und funktioniere wie auf „Autopilot“"
+      11: "Ich fühle eine starke Abneigung gegen meine Arbeit"
+      12: "Meine Arbeit ist mir gleichgültig"
+      13: "Ich bezweifle, dass meine Arbeit anderen überhaupt etwas bedeutet"
+      14: "Bei der Arbeit habe ich Mühe, aufmerksam zu bleiben"
+      15: "Bei der Arbeit fällt es mir schwer, klar zu denken"
+      16: "Bei der Arbeit bin ich vergesslich und leicht ablenkbar"
+      17: "Bei der Arbeit habe ich Mühe, mich zu konzentrieren"
+      18: "Ich mache Fehler in meiner Arbeit, weil ich in Gedanken bei anderen Dingen bin"
+      19: "Bei meiner Arbeit habe ich das Gefühl, keine Kontrolle über meine Emotionen zu haben"
+      20: "Ich erkenne mich selbst nicht wieder in der Art, wie ich bei der Arbeit emotional reagiere"
+      21: "Während meiner Arbeit werde ich schnell gereizt, wenn Dinge nicht so laufen wie ich will"
+      22: "Ich werde wütend oder traurig bei der Arbeit, ohne zu wissen warum"
+      23: "Bei meiner Arbeit kommt es vor, dass ich emotional überreagiere, ohne es zu wollen"
+    worksituation:
+      1: "Meine Arbeit entspricht meinen Fähigkeiten."
+      2: "Ich glaube, ich muss zu viel arbeiten."
+      3: "Ich kann meine Arbeit leicht mit meinem Privatleben verbinden."
+      4: "Ich kann auf meinen Vorgesetzten zählen, wenn ich bei meiner Arbeit Schwierigkeiten habe."
+      5: "Ich kann bei meiner Arbeit viele Entscheidungen allein treffen."
+      6: "Ich mache mir Sorgen, dass ich meine Arbeit verlieren könnte."
+      7: "Ich kann mich an meine Kollegen wenden, wenn mir etwas Unangenehmes zustößt."
+      8: "Bei meiner Arbeit stoße ich auf Situationen, die mich emotional herausfordern."
+      9: "Wenn Entscheidungen getroffen werden, wird meine Meinung berücksichtigt."
+      10: "Ich weiß genau, was andere bei der Arbeit von mir erwarten."
+dependencies:
+  module:
+    - pulso_battool
+  enforced:
+    module:
+      - pulso_battool

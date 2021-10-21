@@ -44,7 +44,7 @@ class BatToolResultExport extends ControllerBase implements ContainerInjectionIn
    */
   public function build() {
     $fields = \Drupal::config('pulso_battool.settings')->get("mental_resilience_block.fields");
-    $additionals = ["age", "gender", "diplom", "sector", "occupation", "work_time", "contract"];
+    $additionals = ["age", "gender", "diplom", "sector", "occupation", "work_time", "contract", "family_situation"];
 
     $startDate = \Drupal::request()->query->get('start_date');
     $endDate = \Drupal::request()->query->get('end_date');

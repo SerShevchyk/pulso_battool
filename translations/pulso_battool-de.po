@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pulso_battool\n"
-"POT-Creation-Date: 2021-10-19 12:13+0200\n"
-"PO-Revision-Date: 2021-10-19 12:14+0200\n"
+"POT-Creation-Date: 2021-10-19 12:14+0200\n"
+"PO-Revision-Date: 2021-10-19 12:15+0200\n"
 "Last-Translator: Vincent Verbruggen <vincent.verbruggen@viavario.be>\n"
 "Language-Team: vincent.verbruggen@viavario.be\n"
-"Language: fr\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,7 @@ msgstr "ID"
 
 #: src/Entity/BatToolResult.php:86
 msgid "The ID of the Term entity."
-msgstr "L'ID de l'entité Term."
+msgstr "Die ID der Entität Term."
 
 #: src/Entity/BatToolResult.php:91
 msgid "UUID"
@@ -30,130 +30,128 @@ msgstr "UUID"
 
 #: src/Entity/BatToolResult.php:92
 msgid "The UUID of the Contact entity."
-msgstr "L'UUID de l'entité Contact."
+msgstr "Die UUID der Kontaktentität."
 
 #: src/Entity/BatToolResult.php:96
 #: src/Entity/Controller/BatToolResultListBuilder.php:105
 msgid "Created"
-msgstr "Créé"
+msgstr "Created"
 
 #: src/Entity/BatToolResult.php:97
 msgid "The time that the entity was created."
-msgstr "Le moment où l'entité a été créée."
+msgstr "Der Zeitpunkt, zu dem die Entität erstellt wurde."
 
 #: src/Entity/BatToolResult.php:103
 msgid "Language code"
-msgstr "Code de la langue"
+msgstr "Language code"
 
 #: src/Entity/BatToolResult.php:104
 msgid "The language code."
-msgstr "Le code de la langue."
+msgstr "Der Sprachcode."
 
 #: src/Entity/BatToolResult.php:109
 msgid "Default Language code"
-msgstr "Code de langue par défaut"
+msgstr "Standard-Sprachcode"
 
 #: src/Entity/BatToolResult.php:110
 msgid "Indicates if this is the default language."
-msgstr "Indique s'il s'agit de la langue par défaut."
+msgstr "Gibt an, ob dies die Standardsprache ist."
 
 #: src/Entity/BatToolResult.php:120 src/Form/MentalResilienceForm.php:495
 msgid "What is your age?"
-msgstr "Quelle âge avez-vous ?"
+msgstr "Wie alt sind Sie?"
 
 #: src/Entity/BatToolResult.php:139 src/Form/MentalResilienceForm.php:501
 msgid "What is your gender?"
-msgstr "Quel est votre genre ?"
+msgstr "Was ist ihr Gender?"
 
 #: src/Entity/BatToolResult.php:163 src/Form/MentalResilienceForm.php:512
 msgid "What is the highest diploma you have obtained?"
-msgstr "Quel est votre diplôme le plus élevé ?"
+msgstr "Was ist Ihr höchstes Bildungsniveau?"
 
 #: src/Entity/BatToolResult.php:189 src/Form/MentalResilienceForm.php:525
 msgid "What sector do you work in?"
-msgstr "Dans quel secteur travaillez-vous ?"
+msgstr "In welchem Sektor arbeiten Sie?"
 
 #: src/Entity/BatToolResult.php:218 src/Form/MentalResilienceForm.php:540
 msgid "What is your occupation?"
-msgstr "Quel est votre métier ?"
+msgstr "Welchen Beruf haben Sie?"
 
 #: src/Entity/BatToolResult.php:246 src/Form/MentalResilienceForm.php:555
 msgid "Do you work full-time or part-time?"
-msgstr "Travaillez-vous à temps plein ou à temps partiel ?"
+msgstr "Arbeiten Sie Vollzeit oder Teilzeit?"
 
 #: src/Entity/BatToolResult.php:269 src/Form/MentalResilienceForm.php:583
 msgid "What type of contract do you have?"
-msgstr "Quel type de contrat avez-vous ?"
+msgstr "Welche Art von Vertrag haben Sie?"
 
 #: src/Entity/BatToolResult.php:292 src/Form/MentalResilienceForm.php:565
 msgid "What is your family situation?"
-msgstr "Quelle est votre situation familiale ?"
+msgstr "Was ist Ihre familiäre Situation?"
 
 #: src/Form/BatToolResultDeleteForm.php:25
 msgid "Are you sure you want to delete entity %name?"
-msgstr "Etes-vous sûr de vouloir supprimer l'entité %nnom ?"
+msgstr "Sind Sie sicher, dass Sie Entität %nname löschen wollen?"
 
 #: src/Form/BatToolResultDeleteForm.php:41
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Delete"
 
 #: src/Form/BatToolResultExportForm.php:45
 msgid "Export"
-msgstr "Exporter"
+msgstr "Export"
 
 #: src/Form/MentalResilienceForm.php:76
 msgid "Please choose an answer"
-msgstr "Veuillez choisir une réponse"
+msgstr "Bitte wählen Sie eine Antwort"
 
 #: src/Form/MentalResilienceForm.php:143 src/Form/MentalResilienceForm.php:317
 msgid "Next: Your result"
-msgstr "Suivant : Votre résultat"
+msgstr "Nächste: Ihr Ergebnis"
 
 #: src/Form/MentalResilienceForm.php:233
 msgid "Next: Burn-out"
-msgstr "Suivant : Burn-out"
+msgstr "Nächste: Ausbrennen"
 
 #: src/Form/MentalResilienceForm.php:408
 msgid "Next: Your work situation and personal characteristics"
-msgstr ""
-"Suivant : Votre situation professionnelle et vos caractéristiques "
-"personnelles"
+msgstr "Weiter: Ihre Arbeitssituation und persönliche Eigenschaften"
 
 #: src/Form/MentalResilienceForm.php:504
 msgid "Male"
-msgstr "Homme"
+msgstr "Mann"
 
 #: src/Form/MentalResilienceForm.php:505
 msgid "Female"
-msgstr "Femme"
+msgstr "Frau"
 
 #: src/Form/MentalResilienceForm.php:506
 msgid "Other"
-msgstr "Autre"
+msgstr "Andere"
 
 #: src/Form/MentalResilienceForm.php:515
 msgid "Primary education"
-msgstr "Enseignement primaire"
+msgstr "Grundschulausbildung"
 
 #: src/Form/MentalResilienceForm.php:516
 msgid "Lower secondary education (up to 3rd year)"
-msgstr "Enseignement secondaire inférieur (3ème année comprise)"
+msgstr "Sekundarstufe I"
 
 #: src/Form/MentalResilienceForm.php:517
 msgid "Upper secondary education (up to and including 7th year)"
-msgstr "Enseignement secondaire supérieur (7ème année comprise)"
+msgstr "Sekundarstufe II"
 
 #: src/Form/MentalResilienceForm.php:518
 msgid "Non-university higher education"
-msgstr "Enseignement supérieur non universitaire"
+msgstr "Hochschulbildung, nichtuniversitär"
 
 #: src/Form/MentalResilienceForm.php:519
 msgid "University higher education"
-msgstr "Enseignement supérieur universitaire"
+msgstr "Hochschulbildung, Universitätsniveau"
 
 #: src/Form/MentalResilienceForm.php:528
 msgid "Agriculture"
-msgstr "Agriculture"
+msgstr "Landwirtschaft"
 
 #: src/Form/MentalResilienceForm.php:529
 msgid "Manufacturing"
@@ -161,241 +159,241 @@ msgstr "Industrie"
 
 #: src/Form/MentalResilienceForm.php:530
 msgid "Services"
-msgstr "Services"
+msgstr "Dienstleistungen"
 
 #: src/Form/MentalResilienceForm.php:531
 msgid "Health Care"
-msgstr "Santé"
+msgstr "Gesundheitswesen"
 
 #: src/Form/MentalResilienceForm.php:532
 msgid "Public administration"
-msgstr "Administration publique"
+msgstr "Öffentliche Verwaltung"
 
 #: src/Form/MentalResilienceForm.php:533
 msgid "Education"
-msgstr "Enseignement"
+msgstr "Bildung"
 
 #: src/Form/MentalResilienceForm.php:534 src/Form/MentalResilienceForm.php:549
 msgid "Self-employed or liberal profession"
-msgstr "Indépendant ou profession libérale"
+msgstr "Selbstständig oder freiberuflich"
 
 #: src/Form/MentalResilienceForm.php:543
 msgid ""
 "Unskilled worker (e.g. machine operator/operator, production worker, ...)"
 msgstr ""
-"Ouvrier non qualifié (par exemple, opérateur/opérateur de machine, ouvrier "
-"de production,…)"
+"Ungelernte(r) Arbeiter(in) (z.B. Maschinenbediener(in), "
+"Produktionsarbeiter(in))"
 
 #: src/Form/MentalResilienceForm.php:544
 msgid "Skilled worker or foreman (e.g. electrician, mechanic, welder, etc.)"
 msgstr ""
-"Ouvrier qualifié ou contremaître/patron (par exemple électricien, "
-"mécanicien, soudeur,…)"
+"Gelernte(r) Arbeiter(in) oder Vorarbeiter(in) (z.B. Elektriker(in), "
+"Monteur(in), Schweißer(in) usw.)"
 
 #: src/Form/MentalResilienceForm.php:545
 msgid ""
 "Executive or administrative employee (e.g. typist, secretary, telephonist, "
 "shop assistant,...)"
 msgstr ""
-"Employé(e) de direction ou administratif/-ive (ex. dactylo, secrétaire, "
-"opérateur/-trice, employé(e) de magasin,…)"
+"Ausführende(r) oder Verwaltungsangestellte(r) (z.B. Schreibkraft, "
+"Sekretär(in), Telefonist(in), Ladenangestellte(r), usw.)"
 
 #: src/Form/MentalResilienceForm.php:546
 msgid ""
 "Medium-level employee or manager of employees (e.g. ICT expert, teacher, "
 "sales representative,...)"
 msgstr ""
-"Employé(e) de niveau intermédiaire ou gestionnaire d'employés (par exemple, "
-"expert(e) en TIC, enseignant(e), représentant(e) des ventes, …)"
+"Mittleres Niveau Angestellte(r) oder Vorgesetzte(r) von Angestellten (z.B. "
+"IKT-Fachmann, Lehrkraft, Vertreter(in), usw.)"
 
 #: src/Form/MentalResilienceForm.php:547
 msgid ""
 "Senior, lower or middle management (e.g. business manager, sales manager, "
 "office manager, engineer, teacher, etc.)"
 msgstr ""
-"Employé(e) supérieur(e), cadre inférieur ou cadre intermédiaire (par "
-"exemple, chef d'entreprise, directeur/-trice des ventes), chef de bureau, "
-"ingénieur, enseignant(e), ...)"
+"Höhere(r) Angestellte(r), unterer oder mittlerer Stab (z.B. "
+"Geschäftsführer(in), Verkaufsleiter(in), Büroleiter(in), Ingenieur(in), "
+"Dozent(in) usw.)"
 
 #: src/Form/MentalResilienceForm.php:548
 msgid ""
 "Senior manager or director (e.g. head of department, senior manager, head of "
 "school, ...)"
 msgstr ""
-"Cadre supérieur ou direction (par exemple, chef de service, senior manager, "
-"directeur d'école,…)"
+"Oberes Management oder Direktion (z.B. Abteilungsleiter(in), Senior Manager, "
+"Schulleiter(in)usw.)"
 
 #: src/Form/MentalResilienceForm.php:558
 msgid "Full-time"
-msgstr "A temps plein"
+msgstr "Vollzeit"
 
 #: src/Form/MentalResilienceForm.php:559
 msgid "Part-time (e.g. 4/5 or 1/2)"
-msgstr "A temps partiel (p.ex. 4/5 ou 1/2)"
+msgstr "Teilzeit (z. B. 4/5 oder 1/2)"
 
 #: src/Form/MentalResilienceForm.php:568
 msgid "Single"
-msgstr "Célibataire"
+msgstr "Alleinstehend"
 
 #: src/Form/MentalResilienceForm.php:569
 msgid "Single with one child"
-msgstr "Célibataire avec un enfant"
+msgstr "Alleinstehend mit einem Kind"
 
 #: src/Form/MentalResilienceForm.php:570
 msgid "Single with several children"
-msgstr "Célibataire avec plusieurs enfants"
+msgstr "Alleinstehend mit mehreren Kindern"
 
 #: src/Form/MentalResilienceForm.php:571
 msgid "Living together or married without children"
-msgstr "Cohabitant ou marié sans enfant"
+msgstr "Zusammenwohnend oder verheiratet ohne Kinder"
 
 #: src/Form/MentalResilienceForm.php:572
 msgid "Living together or married with one child"
-msgstr "Cohabitant ou marié avec un enfant"
+msgstr "Zusammenwohnend oder verheiratet mit einem Kind"
 
 #: src/Form/MentalResilienceForm.php:573
 msgid "Living together or married with several children"
-msgstr "Cohabitant ou marié avec plusieurs enfants"
+msgstr "Zusammenwohnend oder verheiratet mit mehreren Kindern"
 
 #: src/Form/MentalResilienceForm.php:574
 msgid "Newly formed family (with one or more children)"
-msgstr "Famille recomposée avec un ou plusieurs enfants"
+msgstr "Neu zusammengestellte Familie (mit einem oder mehreren Kindern)"
 
 #: src/Form/MentalResilienceForm.php:575
 msgid ""
 "Single, with one or more elderly relatives living at home (parents, aunt/"
 "uncle, …)"
 msgstr ""
-"Célibataire, avec un ou plusieurs membres âgés de la famille (parents, tante/"
-"oncle, …) habitant sous le même toit"
+"Alleinstehend, mit einem oder mehreren, im Haus wohnhaften älteren "
+"Familienmitgliedern (Eltern, Tante/Onkel usw.)"
 
 #: src/Form/MentalResilienceForm.php:576
 msgid ""
 "Family without children, with one or more elderly relatives living at home "
 "(parents, aunt/uncle, …)"
 msgstr ""
-"Famille sans enfant, avec un ou plusieurs membres âgés de la famille "
-"(parents, tante/oncle, …) habitant sous le même toit"
+"Familie ohne Kinder, mit einem oder mehreren, im Haus wohnhaften älteren "
+"Familienmitgliedern (Eltern, Tante/Onkel usw.)"
 
 #: src/Form/MentalResilienceForm.php:577
 msgid ""
 "Family with one or more children, and with one or more elderly relatives "
 "living at home (parents, aunt/uncle, …)"
 msgstr ""
-"Famille avec un ou plusieurs enfants, et avec un ou plusieurs membres âgés "
-"de la famille (parents, tante/oncle, …) habitant sous le même toit"
+"Familie mit einem oder mehreren Kindern, und mit einem oder mehreren, im "
+"Haus wohnhaften älteren Familienmitgliedern (Eltern, Tante/Onkel usw.)"
 
 #: src/Form/MentalResilienceForm.php:586
 msgid "Permanent contract (open-ended; statutory)"
-msgstr "Un contrat fixe (durée indéterminée, statutaire)"
+msgstr "Fester Vertrag (unbefristet; statutarisch)"
 
 #: src/Form/MentalResilienceForm.php:587
 msgid "Temporary contract (fixed term, contractual, agency work, etc.)"
-msgstr "Un contrat temporaire (durée déterminée, contractuel, intérimaire,…)"
+msgstr "Befristeter Vertrag (bestimmte Dauer, vertraglich, Zeitarbeit usw.)"
 
 #: src/Form/MentalResilienceForm.php:597
 msgid "Submit"
-msgstr "Envoyer"
+msgstr "Senden"
 
 #: src/Form/MentalResilienceForm.php:687
 #: templates/mental-resilience-form.html.twig:19
 msgid "Never"
-msgstr "Jamais"
+msgstr "Nie"
 
 #: src/Form/MentalResilienceForm.php:688
 #: templates/mental-resilience-form.html.twig:20
 msgid "Rarely"
-msgstr "Rarement"
+msgstr "Selten"
 
 #: src/Form/MentalResilienceForm.php:689
 #: templates/mental-resilience-form.html.twig:21
 msgid "Sometimes"
-msgstr "Parfois"
+msgstr "Manchmal"
 
 #: src/Form/MentalResilienceForm.php:690
 #: templates/mental-resilience-form.html.twig:22
 msgid "Often"
-msgstr "Souvent"
+msgstr "Oft"
 
 #: src/Form/MentalResilienceForm.php:691
 #: templates/mental-resilience-form.html.twig:23
 msgid "Always"
-msgstr "Toujours"
+msgstr "Immer"
 
 #: src/Form/MentalResilienceForm.php:702
 #: templates/mental-resilience-work-situation-form.html.twig:19
 msgid "Strongly disagree"
-msgstr "Pas du tout d'accord"
+msgstr "Stimme überhaupt nicht zu"
 
 #: src/Form/MentalResilienceForm.php:703
 #: templates/mental-resilience-work-situation-form.html.twig:20
 msgid "Disagree"
-msgstr "Pas d'accord"
+msgstr "Stimme nicht zu"
 
 #: src/Form/MentalResilienceForm.php:704
 #: templates/mental-resilience-work-situation-form.html.twig:21
 msgid "Rather disagree"
-msgstr "Plutôt pas d'accord"
+msgstr "Eher nicht zustimmen"
 
 #: src/Form/MentalResilienceForm.php:705
 #: templates/mental-resilience-work-situation-form.html.twig:22
 msgid "Neither agree nor disagree"
-msgstr "Ni d'accord, ni pas d'accord"
+msgstr "Stimme weder zu noch nicht zu"
 
 #: src/Form/MentalResilienceForm.php:706
 #: templates/mental-resilience-work-situation-form.html.twig:23
 msgid "Rather agree"
-msgstr "Plutôt d'accord"
+msgstr "Eher zustimmen"
 
 #: src/Form/MentalResilienceForm.php:707
 #: templates/mental-resilience-work-situation-form.html.twig:24
 msgid "Agree"
-msgstr "D'accord"
+msgstr "Stimme zu"
 
 #: src/Form/MentalResilienceForm.php:708
 #: templates/mental-resilience-work-situation-form.html.twig:25
 msgid "Fully agree"
-msgstr "Tout à fait d'accord"
+msgstr "Stimme völlig zu"
 
 #: src/Form/MentalResilienceForm.php:716
 msgid "The form has been submitted"
-msgstr "Le formulaire a été soumis"
+msgstr "Das Formular wurde abgeschickt"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:73
 msgid "Stress Result Descriptions"
-msgstr "Descriptions des résultats de stress"
+msgstr "Beschreibungen der Stressergebnisse"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:79
 msgid "Stress Result: Green"
-msgstr "Résultat du stress : Vert"
+msgstr "Stress Ergebnis: Grün"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:86
 msgid "Stress Result: Orange"
-msgstr "Résultat du stress : Orange"
+msgstr "Stress Ergebnis: Orange"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:93
 msgid "Stress Result: Red"
-msgstr "Résultat du stress : Rouge"
+msgstr "Stress Ergebnis: Rot"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:99
 msgid "Burn Out Result Descriptions"
-msgstr "Descriptions des résultats du burn out"
+msgstr "Burn Out Ergebnisbeschreibungen"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:105
 msgid "Burn Out Result: Green"
-msgstr "Résultat du Burn Out : Vert"
+msgstr "Burn Out Ergebnis: Grün"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:112
 msgid "Burn Out Result: Orange"
-msgstr "Résultat du Burn Out : Orange"
+msgstr "Burn Out Ergebnis: Orange"
 
 #: src/Plugin/Block/MentalResilienceBlock.php:119
 msgid "Burn Out Result: Red"
-msgstr "Résultat du Burn Out : Rouge"
+msgstr "Burn Out Ergebnis: Rot"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:61
 msgid "Title"
-msgstr "Titre"
+msgstr "Title"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:67
 msgid "Description"
@@ -403,8 +401,8 @@ msgstr "Description"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:73
 msgid "Button Title"
-msgstr "Titre du bouton"
+msgstr "Button Titel"
 
 #: src/Plugin/Block/MentalResilienceTeaserBlock.php:79
 msgid "Redirect Url"
-msgstr "URL de redirection"
+msgstr "Weiterleitung URL"

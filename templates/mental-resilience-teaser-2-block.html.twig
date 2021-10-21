@@ -45,14 +45,25 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div {{ content_attributes.addClass('content row') }}>
-      <div class="col-md-5 pull-right">
+    <div {{ content_attributes.addClass('content') }}>
+      <div>
         <div class="bat-tool">
           <div class="bat-tool-home-block">
-            <div>
-              <h2><span>{{ data.title|t }}</span></h2>
-              <p>{{ data.description|t }}</p>
-              <div><a href="{{ data.redirect_url }}" class="btn btn-primary btn-bat-tool">{{ data.button_title|t }}</a></div>
+            <div class="bat-tool-box-with-image">
+              {% if data.image_uri %}
+                <div class="row">
+                  <div class="col-sm-6 hidden-xs">
+                    <img src="{{ file_url(data.image_uri) }}">
+                  </div>
+                <div class="col-sm-6 col-xs-12 bat-tool-padded-box">
+              {% endif %}
+                  <h2><span>{{ data.title|t }}</span></h2>
+                  <p>{{ data.description|t }}</p>
+                  <div><a href="{{ data.redirect_url }}" class="btn btn-primary btn-bat-tool">{{ data.button_title|t }}</a></div>
+              {% if data.image_uri %}
+                </div>
+              </div>
+              {% endif %}
             </div>
           </div>
         </div>
