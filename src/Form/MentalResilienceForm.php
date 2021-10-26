@@ -73,7 +73,7 @@ class MentalResilienceForm extends FormBase {
       if ($key !== 'captcha' && !$value) {
         $form_state
           ->setErrorByName($key, $this
-            ->t('Please choose an answer'));
+            ->t('Please answer all the questions.'));
       }
     }
   }

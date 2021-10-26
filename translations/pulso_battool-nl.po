@@ -102,8 +102,8 @@ msgid "Export"
 msgstr "Exporteren"
 
 #: src/Form/MentalResilienceForm.php:76
-msgid "Please choose an answer"
-msgstr "Kies een antwoord"
+msgid "Please answer all the questions."
+msgstr "Gelieve alle vragen te beantwoorden."
 
 #: src/Form/MentalResilienceForm.php:143 src/Form/MentalResilienceForm.php:317
 msgid "Next: Your result"
