@@ -9,7 +9,7 @@ mental_resilience_teaser_2_block:
   description: "Répondez à quelques questions et recevez des conseils."
   button_title: "Faites le test"
   redirect_url: "/"
-  image: ""
+  image: "assets/stresstest.jpg"
 mental_resilience_block:
   block_settings:
     stress:

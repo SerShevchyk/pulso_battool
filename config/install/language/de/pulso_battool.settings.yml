@@ -9,7 +9,7 @@ mental_resilience_teaser_2_block:
   description: "Beantworten Sie einige Fragen und lassen Sie sich beraten."
   button_title: "Mach den Test"
   redirect_url: "/"
-  image: ""
+  image: "assets/stresstest.jpg"
 mental_resilience_block:
   block_settings:
     stress:
