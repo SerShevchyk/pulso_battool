@@ -20,6 +20,11 @@ class MentalResilienceForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    if (function_exists('honeypot_add_form_protection') && \Drupal::config('honeypot.settings')->get('element_name')) {
+      honeypot_add_form_protection($form, $form_state, ['honeypot', 'time_restriction']);
+      $form['honeypot'] = $form[\Drupal::config('honeypot.settings')->get('element_name')];
+    }
+
     $this->options = \Drupal::config('pulso_battool.settings')->get("mental_resilience_block");
 
     if ($form_state->has('page')) {
@@ -68,12 +73,11 @@ class MentalResilienceForm extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
+    $ignore = array_filter(['honeypot', 'honeypot_time', \Drupal::config('honeypot.settings')->get('element_name')]);
 
     foreach ($values as $key => $value) {
-      if ($key !== 'captcha' && !$value) {
-        $form_state
-          ->setErrorByName($key, $this
-            ->t('Please answer all the questions.'));
+      if (!in_array($key, $ignore) && !$value) {
+        $form_state->setErrorByName($key, $this->t('Please answer all the questions.'));
       }
     }
   }
@@ -133,11 +137,6 @@ class MentalResilienceForm extends FormBase {
         '#options' => $this->getOptions(),
       ];
     }
-
-    $form['captcha'] = array(
-      '#type' => 'captcha',
-      '#captcha_type' => 'recaptcha/reCAPTCHA',
-    );
 
     $form['actions'] = [
       '#type' => 'actions',
