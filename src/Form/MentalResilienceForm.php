@@ -70,7 +70,7 @@ class MentalResilienceForm extends FormBase {
     $values = $form_state->getValues();
 
     foreach ($values as $key => $value) {
-      if (!$value) {
+      if ($key !== 'captcha' && !$value) {
         $form_state
           ->setErrorByName($key, $this
             ->t('Please choose an answer'));
@@ -133,6 +133,11 @@ class MentalResilienceForm extends FormBase {
         '#options' => $this->getOptions(),
       ];
     }
+
+    $form['captcha'] = array(
+      '#type' => 'captcha',
+      '#captcha_type' => 'recaptcha/reCAPTCHA',
+    );
 
     $form['actions'] = [
       '#type' => 'actions',
