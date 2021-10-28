@@ -83,6 +83,13 @@ class MentalResilienceForm extends FormBase {
   }
 
   /**
+   * {@inheritdoc}
+   */
+  public function validateWorkSituationForm(array &$form, FormStateInterface $form_state) {
+    // No validation required
+  }
+
+  /**
    * Method for render form for Stress Test.
    *
    * @param array $form
@@ -603,7 +610,7 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'submit',
       '#value' => $this->t('Submit'),
       '#submit' => ['::submitWorkSituation'],
-      '#validate' => ['::validateForm'],
+      '#validate' => ['::validateWorkSituationForm'],
     ];
 
     $form['#theme'] = 'mental_resilience_work_situation_form';
