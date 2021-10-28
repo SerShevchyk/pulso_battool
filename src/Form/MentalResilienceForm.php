@@ -216,8 +216,8 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'html_tag',
       '#tag' => 'img',
       '#attributes' => [
-        "src" => drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
-        "class" => "bat-tool-gauge img-responsive",
+        "src" => base_path() . drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
+        "class" => ["bat-tool-gauge", "img-responsive"],
         "data-bat-tool-norm" => "stress",
         "data-bat-tool-score" => $testResult,
         "data-bat-tool-risk-profile" => $form_state->get("risk")[$testResultRisk]
@@ -392,8 +392,8 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'html_tag',
       '#tag' => 'img',
       '#attributes' => [
-        "src" => drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
-        "class" => "bat-tool-gauge img-responsive",
+        "src" => base_path() . drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
+        "class" => ["bat-tool-gauge", "img-responsive"],
         "data-bat-tool-norm" => "burnout",
         "data-bat-tool-score" => $testResult,
         "data-bat-tool-risk-profile" => $form_state->get("risk")[$testResultRisk]
