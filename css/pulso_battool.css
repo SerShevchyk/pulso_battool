@@ -176,6 +176,7 @@
 }
 .bat-tool .bat-tool-likert-table .bat-tool-likert-answer .radio {
   margin: 0;
+  padding: 0;
 }
 .bat-tool .bat-tool-likert-table .bat-tool-likert-answer .radio label {
   justify-content: center;
