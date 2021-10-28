@@ -1,6 +1,19 @@
 /**
  * SCSS for the module
  */
+.bat-tool {
+  /*.bat-tool-home-block .bat-tool-box {
+      background: $primaryColor;
+      &.bat-tool-box-with-border {
+          @include bat-tool-box-with-border-mixin(#000, $primaryColor);
+      }
+      a.btn.btn-primary {
+          &:hover, &:active, &:focus {
+              color: $primaryColor;
+          }
+      }
+  }*/
+}
 .bat-tool .bat-tool-box {
   clip-path: polygon(60px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 60px) 100%, 0 100%, 0 40px);
   padding: 60px;
@@ -41,22 +54,6 @@
 .bat-tool .bat-tool-box.bat-tool-box-with-image .bat-tool-padded-box {
   padding: 60px;
 }
-.bat-tool .bat-tool-home-block .bat-tool-box {
-  background: #7dd1ce;
-}
-.bat-tool .bat-tool-home-block .bat-tool-box.bat-tool-box-with-border {
-  border: 2px solid #000;
-  background: linear-gradient(38deg, #000 0 2px, transparent 0) bottom left/50% 50%, linear-gradient(-38deg, #000 0 44px, transparent 0) bottom right/50% 50%, linear-gradient(142deg, #000 0 44px, transparent 0) top left/50% 50%, linear-gradient(-142deg, #000 0 2px, transparent 0) top right/50% 50%, #7dd1ce;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  clip-path: none;
-  -webkit-mask: linear-gradient(38deg, transparent 0 0, #fff 0) bottom left, linear-gradient(-38deg, transparent 0 42px, #fff 0) bottom right, linear-gradient(142deg, transparent 0 42px, #fff 0) top left, linear-gradient(-142deg, transparent 0 0, #fff 0) top right;
-  -webkit-mask-size: 50.5% 50.5%;
-  -webkit-mask-repeat: no-repeat;
-}
-.bat-tool .bat-tool-home-block .bat-tool-box a.btn.btn-primary:hover, .bat-tool .bat-tool-home-block .bat-tool-box a.btn.btn-primary:active, .bat-tool .bat-tool-home-block .bat-tool-box a.btn.btn-primary:focus {
-  color: #7dd1ce;
-}
 .bat-tool h2 {
   margin-top: 0;
   text-align: center;
@@ -83,16 +80,23 @@
   -webkit-box-shadow: 0 0 0 5px rgba(154, 175, 255, 0.25);
   box-shadow: 0 0 0 5px rgba(154, 175, 255, 0.25);
 }
-.bat-tool .form-group {
+.bat-tool .form-group,
+.bat-tool fieldset.fieldgroup {
   margin-bottom: 40px;
 }
 .bat-tool .form-actions {
   text-align: center;
 }
+.bat-tool fieldset.fieldgroup > legend {
+  border-bottom: 0;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 0 0 1em;
+}
 .bat-tool .radio {
   margin: 0 0 0 2em;
 }
-.bat-tool .radio label {
+.bat-tool .radio > label {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -101,10 +105,7 @@
   padding: 0;
   text-align: left;
 }
-.bat-tool .radio label span {
-  display: none;
-}
-.bat-tool .radio label input[type=radio] {
+.bat-tool .radio > label input[type=radio] {
   border-radius: 50%;
   flex: 0 0 auto;
   width: 1em;
@@ -123,23 +124,29 @@
   color-adjust: exact;
   position: relative;
 }
-.bat-tool .radio label input[type=radio]:checked {
+.bat-tool .radio > label input[type=radio]:checked {
   background-color: #9aafff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
   border-color: #9aafff;
 }
-.bat-tool .radio label input[type=radio]:focus {
+.bat-tool .radio > label input[type=radio]:focus {
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(154, 175, 255, 0.25);
 }
-.bat-tool .radio label input[type=radio].form-control.form-radio:invalid, .bat-tool .radio label input[type=radio].form-control.form-radio.is-invalid {
+.bat-tool .radio > label input[type=radio].form-radio.error, .bat-tool .radio > label input[type=radio].form-radio:invalid, .bat-tool .radio > label input[type=radio].form-radio.is-invalid {
   background-image: none;
   border-color: #dc3545;
   padding-right: 0;
 }
-.bat-tool .radio label input[type=radio].form-control.form-radio:invalid + span, .bat-tool .radio label input[type=radio].form-control.form-radio.is-invalid + span {
+.bat-tool .radio > label input[type=radio].form-radio.error + label, .bat-tool .radio > label input[type=radio].form-radio:invalid + label, .bat-tool .radio > label input[type=radio].form-radio.is-invalid + label {
   color: #dc3545;
+}
+.bat-tool .radio.has-error > label {
+  color: #dc3545;
+}
+.bat-tool .radio + .radio {
+  margin-top: 0;
 }
 .bat-tool .bat-tool-table,
 .bat-tool .bat-tool-table-header,
@@ -150,10 +157,12 @@
 .bat-tool .bat-tool-tr {
   display: table-row;
 }
+.bat-tool .bat-tool-th {
+  font-weight: bold;
+}
 .bat-tool .bat-tool-th,
 .bat-tool .bat-tool-td {
   display: table-cell;
-  font-weight: bold;
 }
 .bat-tool .bat-table-separator {
   display: none;
@@ -180,7 +189,7 @@
   display: none;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 tbody tr,
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-table-body .bat-tool-tr {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-tr {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.6em;
@@ -191,14 +200,15 @@
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-question {
   counter-increment: questionNumber;
-  font-weight: 800;
-  padding-bottom: 1em;
-  padding-top: 1.6em;
+  font-weight: 700;
+  padding: 1.6em 0 1em 2em;
+  position: relative;
   width: 100%;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-question:before {
   content: counter(questionNumber) ".";
-  margin-right: 0.5em;
+  left: 0;
+  position: absolute;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer {
   border-top: none;
@@ -206,14 +216,14 @@
   padding: 0;
   width: 20%;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio label {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label {
   align-items: center;
   flex-direction: column;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio label input[type=radio] {
-  margin: 0.2em auto 0.25em;
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label input[type=radio] {
+  margin: 0.2em auto;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio label span {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label label {
   display: block;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-table-separator {
@@ -237,13 +247,16 @@
   .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio {
     margin-left: 2em;
   }
-  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio label {
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label {
     align-items: flex-start;
     flex-direction: row;
     justify-content: flex-start;
   }
-  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio label input[type=radio] {
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label input[type=radio] {
     margin: 0.2em 0.5em 0 0;
+  }
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-5 .bat-tool-likert-answer .radio > label label {
+    text-align: left;
   }
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 thead,
@@ -251,7 +264,7 @@
   display: none;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 tbody tr,
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-table-body .bat-tool-tr {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-tr {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.6em;
@@ -262,14 +275,15 @@
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-question {
   counter-increment: questionNumber;
-  font-weight: 800;
-  padding-bottom: 1em;
-  padding-top: 1.6em;
+  font-weight: 700;
+  padding: 1.6em 0 1em 2em;
+  position: relative;
   width: 100%;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-question:before {
   content: counter(questionNumber) ".";
-  margin-right: 0.5em;
+  left: 0;
+  position: absolute;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer {
   border-top: none;
@@ -277,14 +291,14 @@
   padding: 0;
   width: 20%;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio label {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label {
   align-items: center;
   flex-direction: column;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio label input[type=radio] {
-  margin: 0.2em auto 0.25em;
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label input[type=radio] {
+  margin: 0.2em auto;
 }
-.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio label span {
+.bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label label {
   display: block;
 }
 .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-table-separator {
@@ -311,13 +325,16 @@
   .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio {
     margin-left: 2em;
   }
-  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio label {
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label {
     align-items: flex-start;
     flex-direction: row;
     justify-content: flex-start;
   }
-  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio label input[type=radio] {
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label input[type=radio] {
     margin: 0.2em 0.5em 0 0;
+  }
+  .bat-tool .bat-tool-likert-table.bat-tool-likert-scale-7 .bat-tool-likert-answer .radio > label label {
+    text-align: left;
   }
 }
 .bat-tool .bat-tool-result {
@@ -334,4 +351,4 @@
   max-width: 75px;
 }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=pulso_battool.css.map */

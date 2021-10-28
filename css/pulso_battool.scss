@@ -1,0 +1,339 @@
+$primaryColor: #7dd1ce;
+$secondaryColor: #9aafff;
+
+/**
+ * SCSS for the module
+ */
+@mixin bat-tool-box-with-border-mixin($borderColor: #000, $background: transparent, $borderWidth: 2px, $cornerSize: 40px) {
+    $size: $borderWidth + $cornerSize;
+    $degrees: 38deg;
+    border: $borderWidth solid $borderColor;
+    background:
+        linear-gradient( $degrees, $borderColor 0 $borderWidth , transparent 0) bottom left /50% 50%,
+        linear-gradient( (-1 * $degrees), $borderColor 0 ($borderWidth + $size), transparent 0) bottom right/50% 50%,
+        linear-gradient( (180 - $degrees), $borderColor 0 ($borderWidth + $size)    , transparent 0) top left    /50% 50%,
+        linear-gradient( (-1 * (180 - $degrees)), $borderColor 0 $borderWidth   , transparent 0) top right   /50% 50%,
+        $background;
+    background-origin:border-box;
+    background-repeat:no-repeat;
+    clip-path: none;
+    -webkit-mask:
+        linear-gradient( $degrees, transparent 0 0 ,#fff 0) bottom left,
+        linear-gradient( (-1 * $degrees), transparent 0 $size,#fff 0) bottom right,
+        linear-gradient( (180 - $degrees), transparent 0 $size    ,#fff 0) top left,
+        linear-gradient( (-1 * (180 - $degrees)), transparent 0 0   ,#fff 0) top right;
+        -webkit-mask-size:50.5% 50.5%;
+        -webkit-mask-repeat:no-repeat;
+}
+
+.bat-tool {
+    .bat-tool-box {
+        clip-path: polygon(60px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 60px) 100%, 0 100%, 0 40px);
+        padding: 60px;
+        &.bat-tool-box-with-border {
+            @media (min-width: 992px) {
+                @include bat-tool-box-with-border-mixin();
+            }
+            @media (max-width: 991px) {
+                clip-path: none;
+                padding: 0;
+            }
+        }
+        &.bat-tool-box-with-image {
+            padding: 0;
+            > .row {
+                display: flex;
+                > div:first-child {
+                    overflow: hidden;
+                }
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                width: 100%;
+            }
+            .bat-tool-padded-box {
+                padding: 60px;
+            }
+        }
+    }
+    /*.bat-tool-home-block .bat-tool-box {
+        background: $primaryColor;
+        &.bat-tool-box-with-border {
+            @include bat-tool-box-with-border-mixin(#000, $primaryColor);
+        }
+        a.btn.btn-primary {
+            &:hover, &:active, &:focus {
+                color: $primaryColor;
+            }
+        }
+    }*/
+
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .bat-introduction,
+    .bat-instruction {
+        text-align: center;
+    }
+
+    .btn.btn-bat-tool {
+        background-color: transparent;
+        white-space: normal;
+        @media (max-width: 576px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .form-control {
+        border-radius: 0;
+        border: 2px solid #000;
+        &:focus {
+            -webkit-box-shadow: 0 0 0 5px rgba($secondaryColor, 0.25); 
+            box-shadow: 0 0 0 5px rgba($secondaryColor, 0.25);
+        }
+    }
+
+    .form-group,
+    fieldset.fieldgroup {
+        margin-bottom: 40px;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+
+    fieldset.fieldgroup {
+        > legend {
+            border-bottom: 0;
+            font-size: inherit;
+            font-weight: 700;
+            margin: 0 0 1em;
+        }
+    }
+
+    .radio {
+        margin: 0 0 0 2em;
+        > label {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: flex-start;
+            min-height: auto;
+            padding: 0;
+            text-align: left;
+            input[type=radio] {
+                border-radius: 50%;
+                flex: 0 0 auto;
+                width: 1em;
+                height: 1em;
+                margin: 0.2em 0.5em 0 0;
+                vertical-align: top;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                border: 2px solid #1d1d1b;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+                position: relative;
+                &:checked {
+                    background-color: $secondaryColor;
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+                    border-color: $secondaryColor;
+                }
+                &:focus {
+                    border-color: #86b7fe;
+                    outline: 0;
+                    box-shadow: 0 0 0 0.25rem rgba($secondaryColor, 0.25);
+                }
+
+                &.form-radio {
+                    &.error,
+                    &:invalid,
+                    &.is-invalid {
+                        background-image: none;
+                        border-color: #dc3545;
+                        padding-right: 0;
+                        + label {
+                            color: #dc3545;
+                        }
+                    }
+                }            
+            }
+        }
+        &.has-error {
+            > label {
+                color: #dc3545;
+            }
+        }
+        + .radio {
+            margin-top: 0;
+        }
+    }
+
+    .bat-tool-table,
+    .bat-tool-table-header,
+    .bat-tool-table-body {
+        display: table;
+        width: 100%;
+    }
+    .bat-tool-tr {
+        display: table-row;
+    }
+    .bat-tool-th {
+        font-weight: bold;
+    }
+    .bat-tool-th,
+    .bat-tool-td {
+        display: table-cell;
+    }
+
+    .bat-table-separator {
+        display: none;
+    }
+
+    .bat-tool-likert-table {
+        counter-reset: questionNumber;
+        margin: 2em 0;
+        .bat-tool-likert-answer {
+            vertical-align: middle;
+            .radio {
+                margin: 0;
+                label {
+                    justify-content: center;
+                    text-align: center;
+                    input[type=radio] {
+                        margin: 0.2em 0 0;
+                    }
+                }
+            }
+        }
+
+        @mixin likert-scale () {
+            thead,
+            .bat-tool-table-header {
+                display: none;
+            }
+            tbody tr,
+            .bat-tool-tr {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 1.6em;
+                margin-top: 1.8em;
+            }
+            .bat-tool-likert-question-number {
+                display: none;
+            }
+            .bat-tool-likert-question {
+                counter-increment: questionNumber;
+                font-weight: 700;
+                padding: 1.6em 0 1em 2em;
+                position: relative;
+                width: 100%;
+                &:before {
+                    content: counter(questionNumber) ".";
+                    left: 0;
+                    position: absolute;
+                }
+            }
+            .bat-tool-likert-answer {
+                border-top: none;
+                display: inline-block;
+                padding: 0;
+                width: 20%;
+                .radio {
+                    > label {
+                        align-items: center;
+                        flex-direction: column;
+                        input[type=radio] {
+                            margin: 0.2em auto;
+                        }
+                        label {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .bat-table-separator {
+                margin: 0 0 1em;
+                th,
+                .bat-tool-td {
+                    padding-bottom: 0.25em;
+                    padding-top: 2em;
+                    width: 100%;
+                }
+                &:first-child {
+                    th,
+                    .bat-tool-td {
+                        border: none;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+
+        @mixin likert-full-width-radio() {
+            .bat-tool-likert-answer {
+                width: 100%;
+                .radio {
+                    margin-left: 2em;
+                    > label {
+                        align-items: flex-start;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        input[type=radio] {
+                            margin: 0.2em 0.5em 0 0;
+                        }
+                        label {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.bat-tool-likert-scale-5 {
+            //@media (max-width: 991px) {
+                @include likert-scale();
+            //}
+            @media (max-width: 576px) {
+                @include likert-full-width-radio();
+            }
+        }
+        &.bat-tool-likert-scale-7 {
+            //@media (max-width: 1200px) {
+                @include likert-scale();
+                .bat-tool-likert-answer {
+                    width: calc(100% / 7);
+                }
+            //}
+            @media (max-width: 768px) {
+                @include likert-full-width-radio();
+            }
+        }
+    }
+
+    .bat-tool-result {
+        margin: 2em 0;
+        .row {
+            @media (min-width: 992px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .bat-tool-traffic-light {
+        margin: 0 auto 1em;
+        max-width: 75px;
+    }
+}
