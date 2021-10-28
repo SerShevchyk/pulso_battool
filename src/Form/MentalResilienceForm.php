@@ -135,6 +135,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 
@@ -309,6 +310,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 
@@ -485,6 +487,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getSevenOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 

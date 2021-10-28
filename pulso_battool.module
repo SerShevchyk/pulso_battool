@@ -48,8 +48,27 @@ function pulso_battool_theme($existing, $type, $theme, $path): array {
 function pulso_battool_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   switch ($form_id) {
     case "mental_resilience_stress_form" :
-
+      pulso_battool_attach_form_id($form, $form_id);
       break;
+  }
+}
+
+/**
+ * Attaches form id to all form elements.
+ *
+ * @param $form
+ *   The form or form element which children should have form id attached.
+ * @param $form_id
+ *   The form id attached to form elements.
+ *
+ * @return array
+ */
+function pulso_battool_attach_form_id(&$form, $form_id) {
+  foreach (Element::children($form) as $child) {
+    if (!isset($form[$child]['#form_id'])) {
+      $form[$child]['#form_id'] = $form_id;
+    }
+    pulso_battool_attach_form_id($form[$child], $form_id); // recurse for children
   }
 }
 
@@ -57,7 +76,7 @@ function pulso_battool_form_alter(&$form, FormStateInterface $form_state, $form_
  * Implements hook_theme_suggestions_HOOK_alter()
  */
 function pulso_battool_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
-  if (isset($variables["element"]["#array_parents"]) && in_array("questions", $variables["element"]["#array_parents"])) {
+  if (isset($variables["element"]["#form_id"]) && $variables["element"]["#form_id"] === "mental_resilience_stress_form" && in_array("questions", $variables["element"]["#array_parents"])) {
     $suggestions[] = 'fieldset__mental_resilience_form';
   }
 }
@@ -67,6 +86,7 @@ function pulso_battool_theme_suggestions_fieldset_alter(array &$suggestions, arr
  */
 function pulso_battool_theme_suggestions_form_element_alter(array &$suggestions, array $variables) {
   if (isset($variables["element"]["#array_parents"]) && in_array("questions", $variables["element"]["#array_parents"])) {
-    $suggestions[] = 'form_element__mental_resilience_form';
+    // This causes conflicts with Drupal / Varbase
+    // $suggestions[] = 'form_element__mental_resilience_form';
   }
 }
