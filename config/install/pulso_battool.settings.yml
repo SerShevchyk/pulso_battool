@@ -9,7 +9,7 @@ mental_resilience_teaser_2_block:
   description: "Answer a few questions and receive advice."
   button_title: "Do the test"
   redirect_url: "/"
-  image: ""
+  image: "assets/stresstest.jpg"
 mental_resilience_block:
   block_settings:
     stress:
@@ -17,7 +17,7 @@ mental_resilience_block:
       separator: "Psychological complaints"
       separator2: "Psychosomatic complaints"
       introduction: "With the help of the BAT, you can test your level of stress and assess your risk of burnout."
-      instruction: "The following statements relate to how you experience your work and how you feel about it. For each statement, you can indicate how often it applies to you (never, rarely, sometimes, often or always)."
+      instruction: "The following statements refer to different types of stress complaints. For each statement, you can indicate how often it applies to you (never, rarely, sometimes, often or always)."
       result:
         title: "STEP 2 OF 5 - YOUR RESULTS"
         green:

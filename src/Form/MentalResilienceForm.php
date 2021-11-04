@@ -20,6 +20,11 @@ class MentalResilienceForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    if (function_exists('honeypot_add_form_protection') && \Drupal::config('honeypot.settings')->get('element_name')) {
+      honeypot_add_form_protection($form, $form_state, ['honeypot', 'time_restriction']);
+      $form['honeypot'] = $form[\Drupal::config('honeypot.settings')->get('element_name')];
+    }
+
     $this->options = \Drupal::config('pulso_battool.settings')->get("mental_resilience_block");
 
     if ($form_state->has('page')) {
@@ -68,14 +73,20 @@ class MentalResilienceForm extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
+    $ignore = array_filter(['honeypot', 'honeypot_time', \Drupal::config('honeypot.settings')->get('element_name')]);
 
     foreach ($values as $key => $value) {
-      if (!$value) {
-        $form_state
-          ->setErrorByName($key, $this
-            ->t('Please choose an answer'));
+      if (!in_array($key, $ignore) && !$value) {
+        $form_state->setErrorByName($key, $this->t('Please answer all the questions.'));
       }
     }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function validateWorkSituationForm(array &$form, FormStateInterface $form_state) {
+    // No validation required
   }
 
   /**
@@ -131,6 +142,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 
@@ -211,8 +223,8 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'html_tag',
       '#tag' => 'img',
       '#attributes' => [
-        "src" => drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
-        "class" => "bat-tool-gauge img-responsive",
+        "src" => base_path() . drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
+        "class" => ["bat-tool-gauge", "img-responsive"],
         "data-bat-tool-norm" => "stress",
         "data-bat-tool-score" => $testResult,
         "data-bat-tool-risk-profile" => $form_state->get("risk")[$testResultRisk]
@@ -305,6 +317,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 
@@ -386,8 +399,8 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'html_tag',
       '#tag' => 'img',
       '#attributes' => [
-        "src" => drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
-        "class" => "bat-tool-gauge img-responsive",
+        "src" => base_path() . drupal_get_path('module', 'pulso_battool') . "/assets/gauge.svg",
+        "class" => ["bat-tool-gauge", "img-responsive"],
         "data-bat-tool-norm" => "burnout",
         "data-bat-tool-score" => $testResult,
         "data-bat-tool-risk-profile" => $form_state->get("risk")[$testResultRisk]
@@ -481,6 +494,7 @@ class MentalResilienceForm extends FormBase {
         '#title' => $this->t($value),
         '#default_value' => NULL,
         '#options' => $this->getSevenOptions(),
+        '#form_id' => $this->getFormId(),
       ];
     }
 
@@ -596,7 +610,7 @@ class MentalResilienceForm extends FormBase {
       '#type' => 'submit',
       '#value' => $this->t('Submit'),
       '#submit' => ['::submitWorkSituation'],
-      '#validate' => ['::validateForm'],
+      '#validate' => ['::validateWorkSituationForm'],
     ];
 
     $form['#theme'] = 'mental_resilience_work_situation_form';

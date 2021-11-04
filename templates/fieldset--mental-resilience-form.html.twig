@@ -24,7 +24,7 @@
   <div class="bat-tool-td bat-tool-likert-question">{{ element["#title"] }}</div>
   {% for key,value in element["#options"] %}
     <div class="bat-tool-td bat-tool-likert-answer">
-      <div class="radio"><label>{{ attribute(element, key) }}<span>{{ value }}</span></label></div>
+      {{ attribute(element, key) }}
     </div>
   {% endfor %}
 </div>

@@ -31,6 +31,10 @@
           $img.replaceWith($svg);
         }, 'xml');
       });
+
+      $(document).on('change', '.bat-tool-tr input[type=radio]', function (e) {
+        $(this).closest('.bat-tool-tr').find('input[type=radio].error, input[type=radio].is-invalid, .has-error').removeClass('error is-invalid has-error').removeAttr('aria-invalid');
+      });
     }
   };
 })(jQuery);
