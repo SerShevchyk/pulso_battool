@@ -34,11 +34,12 @@ class MentalResilienceTeaser2Block extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $defaultConfiguration = $this->defaultConfiguration();
     $config = $this->getConfiguration();
 
     $build = [
       '#theme' => 'mental_resilience_teaser_2_block',
-      '#data' => $config["mental_resilience_teaser_2_block"] ?? [],
+      '#data' => $defaultConfiguration["mental_resilience_teaser_2_block"] ?? [],
     ];
 
     if ($config['mental_resilience_teaser_2_block']['image'] ?? false) {
@@ -48,7 +49,6 @@ class MentalResilienceTeaser2Block extends BlockBase {
         $build['#data']['image_uri'] = $image_uri->uri->value;
       }
     } else {
-        $defaultConfiguration = $this->defaultConfiguration();
         $build['#data']['image_uri'] = base_path() . drupal_get_path('module', 'pulso_battool') . '/' . ($defaultConfiguration['mental_resilience_teaser_2_block']['image'] ?: 'assets/stresstest.jpg');
     }
 
