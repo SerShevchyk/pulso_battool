@@ -33,7 +33,7 @@ class MentalResilienceTeaserBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $config = $this->getConfiguration();
+    $config = $this->defaultConfiguration();
 
     return [
       '#theme' => 'mental_resilience_teaser_block',

@@ -1,0 +1,6 @@
+entity.bat_tool_result.collection:
+  title: 'BAT Tool Export'
+  description: 'Export BAT Tool results'
+  parent: system.admin_config_development
+  route_name: entity.bat_tool_result.collection
+  weight: 100
