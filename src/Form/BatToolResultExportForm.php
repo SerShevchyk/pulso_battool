@@ -46,6 +46,12 @@ class BatToolResultExportForm extends FormBase {
       '#submit' => ['::submitForm'],
     ];
 
+    $form['actions']['remove'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Remove'),
+      '#submit' => ['::submitRemoveForm'],
+    ];
+
     return $form;
   }
 
@@ -72,4 +78,30 @@ class BatToolResultExportForm extends FormBase {
     $form_state->setRedirectUrl($url);
   }
 
+  /**
+   * Remove results
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  public function submitRemoveForm(array &$form, FormStateInterface $form_state) {
+    $values = $form_state->getValues();
+
+    $startDate = $values["start_date"];
+    $endDate = $values["end_date"];
+
+    $db = \Drupal::database();
+    $query = $db->select('bat_tool_result', 'btr');
+    $query->leftJoin('bat_tool_result_field_data', 'btrfd', 'btrfd.id = btr.id');
+    $query->fields('btr', ['id']);
+    if (isset($startDate) && !empty($startDate) && isset($endDate) && !empty($endDate)) {
+      $query->condition('btrfd.created', strtotime($startDate), '>=');
+      $query->condition('btrfd.created', strtotime($endDate), '<=');
+    }
+    $ids = $query->execute()->fetchCol();
+    $storage_handler = \Drupal::entityTypeManager()->getStorage("bat_tool_result");
+    $entities = $storage_handler->loadMultiple($ids);
+    $storage_handler->delete($entities);
+
+    \Drupal::messenger()->addStatus("Entities were removed successfully");
+  }
 }
