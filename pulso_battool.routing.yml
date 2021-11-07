@@ -53,3 +53,9 @@ pulso_battool.exports.bat_tool_result:
     _controller: '\Drupal\pulso_battool\Controller\BatToolResultExport::build'
   requirements:
     _permission: 'administer users'
+pulso_battool.bat_tool_result_remove:
+  path: '/bat-tool-result/remove'
+  defaults:
+    _controller: '\Drupal\pulso_battool\Controller\BatToolResultRemove::build'
+  requirements:
+    _permission: 'administer users'

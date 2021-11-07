@@ -89,19 +89,19 @@ class BatToolResultExportForm extends FormBase {
     $startDate = $values["start_date"];
     $endDate = $values["end_date"];
 
-    $db = \Drupal::database();
-    $query = $db->select('bat_tool_result', 'btr');
-    $query->leftJoin('bat_tool_result_field_data', 'btrfd', 'btrfd.id = btr.id');
-    $query->fields('btr', ['id']);
-    if (isset($startDate) && !empty($startDate) && isset($endDate) && !empty($endDate)) {
-      $query->condition('btrfd.created', strtotime($startDate), '>=');
-      $query->condition('btrfd.created', strtotime($endDate), '<=');
+    if (!isset($startDate) || empty($startDate) || !isset($endDate) || empty($endDate)) {
+      return $form_state->setRedirect("pulso_battool.bat_tool_result_remove");
     }
-    $ids = $query->execute()->fetchCol();
-    $storage_handler = \Drupal::entityTypeManager()->getStorage("bat_tool_result");
-    $entities = $storage_handler->loadMultiple($ids);
-    $storage_handler->delete($entities);
+    else {
+      $url = Url::fromUserInput("/bat-tool-result/remove", [
+        "query" => [
+          "start_date" => $values["start_date"],
+          "end_date" => $values["end_date"]
+        ]
+      ]);
 
-    \Drupal::messenger()->addStatus("Entities were removed successfully");
+      $form_state->setRedirectUrl($url);
+    }
+
   }
 }
