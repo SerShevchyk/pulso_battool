@@ -15,30 +15,6 @@ use Symfony\Component\HttpFoundation\Response;
  * @package Drupal\pulso_battool\Controller
  */
 class BatToolResultExport extends ControllerBase implements ContainerInjectionInterface {
-
-  /**
-   * Drupal\Core\Entity\Query\QueryFactory definition.
-   *
-   * @var \Drupal\Core\Entity\Query\QueryFactory
-   */
-  protected $entityQueryFactory;
-
-  /**
-   * MyCSVReport constructor.
-   */
-  public function __construct(QueryFactory $entityQueryFactory) {
-    $this->entityQueryFactory = $entityQueryFactory;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('entity.query')
-    );
-  }
-
   /**
    * Export a CSV of data.
    */

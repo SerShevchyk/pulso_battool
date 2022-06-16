@@ -1,6 +1,5 @@
 <?php
 
-use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Component\Serialization\Yaml;
 
 /**
@@ -42,7 +41,7 @@ function pulso_battool_update_8001(&$sandbox) {
   $config->set('mental_resilience_block.block_settings.stress.instruction', 'The following statements refer to different types of stress complaints. For each statement, you can indicate how often it applies to you (never, rarely, sometimes, often or always).');
   $config->save(TRUE);
 
-  $langConfigFiles = file_scan_directory(__DIR__.'/config/install/language', '/.*/', ['min_depth' => 1]);
+  $langConfigFiles = \Drupal::service('file_system')->scanDirectory(__DIR__.'/config/install/language', '/.*/', ['min_depth' => 1]);
   foreach ($langConfigFiles as $langConfigFile) {
     $yaml = Yaml::decode(file_get_contents($langConfigFile->uri));
     $config_translation = \Drupal::languageManager()->getLanguageConfigOverride($yaml['langcode'], 'pulso_battool.settings');
